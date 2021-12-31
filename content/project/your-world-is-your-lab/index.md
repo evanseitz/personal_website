@@ -3,6 +3,8 @@ title: Your World Is Your Lab
 date: 2021-12-31T14:58:07.426Z
 draft: false
 featured: false
+tags:
+  - Educational
 links:
   - url: https://vimeo.com/237845454
     name: "Lesson 1: Electromagnetism"
