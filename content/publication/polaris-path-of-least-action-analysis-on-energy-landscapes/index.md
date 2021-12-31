@@ -1,5 +1,5 @@
 ---
-title: "POLARIS: Path of Least Action Analysis on Energy Landscapes"
+title: "POLARIS: Path of Least Action Analysis on Energy Landscapes (2020)"
 publication_types:
   - "2"
 authors:
