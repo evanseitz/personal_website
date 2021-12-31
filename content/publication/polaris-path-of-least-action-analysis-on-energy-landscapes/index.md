@@ -25,6 +25,8 @@ abstract: Free-energy landscapes are a powerful tool for analyzing dynamical
   rates.
 draft: false
 featured: false
+tags:
+  - First author
 image:
   filename: fortableofcontentsonly.png
   focal_point: Smart
