@@ -1,6 +1,6 @@
 ---
 title: Simulation of cryo-EM ensembles from atomic models of molecules
-  exhibiting continuous conformations
+  exhibiting continuous conformations (2019)
 publication_types:
   - "3"
 authors:
