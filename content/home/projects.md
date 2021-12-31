@@ -30,7 +30,7 @@ content:
   - name: Artistic
     tag: Artistic
   - name: Both
-    tag: [Scientific, Artistic]
+    tag: Scientific and Artistic
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
