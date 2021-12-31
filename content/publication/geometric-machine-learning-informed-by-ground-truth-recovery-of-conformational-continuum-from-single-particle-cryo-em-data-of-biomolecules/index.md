@@ -15,6 +15,8 @@ publication: bioRxiv
 publication_short: bioRxiv
 draft: false
 featured: false
+tags:
+  - First author
 image:
   filename: featured
   focal_point: Smart
