@@ -24,7 +24,7 @@ abstract: Free-energy landscapes are a powerful tool for analyzing dynamical
   provide downstream versatility for comparing most probable paths and reaction
   rates.
 draft: false
-featured: true
+featured: false
 image:
   filename: fortableofcontentsonly.png
   focal_point: Smart
