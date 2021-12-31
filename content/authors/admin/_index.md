@@ -18,9 +18,9 @@ organizations:
   url: https://www.biochem.cuimc.columbia.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My name is Evan Seitz and I am a doctoral candidate in the [Frank Lab](https://joachimfranklab.org/) at [Columbia University](https://www.columbia.edu/) in New York City. My thesis work is based on a geometric machine-learning approach to study hundreds of thousands of unorganized, extremely noisy single-particle cryo-EM images of an ensemble of biomolecules. Specifically, I use manifold embedding to elucidate a biomolecule's metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures.
+bio: My name is Evan Seitz and I am a doctoral candidate in the [Frank Lab](https://joachimfranklab.org/) at [Columbia University](https://www.columbia.edu/) in New York City. My thesis work is based on a geometric machine-learning approach to study hundreds of thousands of unorganized, extremely noisy single-particle cryo-EM images of an ensemble of biomolecules. Specifically, I use manifold embedding to elucidate a biomolecule's metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures. In general, I am very interested in studying complex biophysical systems through a mathematically-rigorous and creative lens. 
 
-In general, I am very interested in studying complex biophysical systems through a mathematically-rigorous and creative lens. Like any scientist, I hope that in at least some small way, I will be able to push human understanding of these systems just one step further.  As for me personally, I love learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, playing tennis and team-based computer games.
+Previous to my current endeavors, I was also an artist. Although my path has changed, I still love to design and find ways to incorporate those skills into my scientific work. As for me personally, I love learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, playing sports like tennis, and team-based computer games.
 
 # Interests to show in About widget
 interests:
