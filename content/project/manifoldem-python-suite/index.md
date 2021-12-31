@@ -2,7 +2,7 @@
 title: ManifoldEM Python Suite
 subtitle: Determination of conformational continua of macromolecules from
   single-particle cryo-EM data
-date: 2021-12-31T06:34:36.543Z
+date: 2021-10-19
 draft: false
 featured: false
 image:
