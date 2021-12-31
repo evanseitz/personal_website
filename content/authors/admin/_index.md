@@ -66,7 +66,7 @@ social:
   link: https://www.linkedin.com/in/eeseitz
 - icon: linkedin
   icon_pack: fad
-  link: "uploads/resume.pdf"
+  url: "uploads/resume.pdf"
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
