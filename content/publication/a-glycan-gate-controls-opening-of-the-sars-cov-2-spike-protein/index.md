@@ -42,6 +42,8 @@ abstract: SARS-CoV-2 infection is controlled by the opening of the spike protein
   entry and infection.
 draft: false
 featured: false
+tags:
+  - Middle author
 image:
   filename: featured
   focal_point: Smart
