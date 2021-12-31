@@ -18,4 +18,4 @@ image:
   preview_only: false
 ---
 
-Public release of ManifoldEM (Python 3, Beta version) for determination of conformational continua of biomolecules from single-particle cryo-EM data
+Public release of ManifoldEM (Python 3; Beta version) for determination of conformational continua of biomolecules from single-particle cryo-EM data
