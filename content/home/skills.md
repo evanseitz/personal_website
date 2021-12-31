@@ -24,7 +24,7 @@ feature:
   icon: chart-area
   icon_pack: fas
   name: Scientific software
-- description: Adobe CS, Cinema4D, Final Cut Pro, GIMP
+- description: Adobe CS, Cinema4D, Final Cut Pro
   icon: photo-video
   icon_pack: fas
   name: Visualization software
