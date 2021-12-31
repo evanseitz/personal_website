@@ -20,14 +20,14 @@ feature:
   icon: code
   icon_pack: fab
   name: Programming
-- description: Scientific software
+- description: Chimera, PyMOL, VMD, RELION, Prism
   icon: chart-area
   icon_pack: fas
-  name: Chimera, PyMOL, VMD, RELION, Prism
-- description: Visualization software
+  name: Scientific software
+- description: Adobe CS, Cinema4D, Final Cut Pro, GIMP
   icon: photo-video
   icon_pack: fas
-  name: Adobe CS, Cinema4D, Final Cut Pro, GIMP
+  name: Visualization software
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
