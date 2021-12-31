@@ -28,6 +28,8 @@ abstract: Molecular machines visit a continuum of conformational states as they
   for reproducing this workflow are available online.
 draft: false
 featured: false
+tags:
+  - First author
 image:
   filename: featured
   focal_point: Smart
