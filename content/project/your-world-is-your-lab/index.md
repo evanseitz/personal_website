@@ -15,5 +15,4 @@ image:
 ---
 [Georgia Institute of Technology's](https://www.gatech.edu/) Massive Online Open Courses for introductory Physics education.
 
-I served as Creative Director on this project for the Department of Physics to oversee design and animation of educational content 
-for Georgia Tech MOOC, with topics ranging from Introductory Mechanics to Electromagnetism. My duties included both scientific and artistic, beginning with the translation of physical concepts and theories into a visual language, and ending in the full production of animated video content for semester-long courses. After initial production, I served as project lead on a team of animators for creating an extensive library of related videos for the university.
+I served as Creative Director on this project for the Department of Physics to oversee design and animation of educational content ranging from Introductory Mechanics to Electromagnetism. My duties included both scientific and artistic, beginning with the translation of physical concepts and theories into a visual language, and ending in the full production of animated video content for semester-long courses. After initial production, I served as project lead on a team of animators for creating an extensive library of related videos for the university.
