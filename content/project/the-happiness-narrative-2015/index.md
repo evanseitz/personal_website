@@ -7,9 +7,8 @@ tags:
   - Educational
 links:
   - url: https://futureofstorytelling.org/video/jennifer-aaker-the-happiness-narrative
-    name: Presentation
-  - url: https://futureofstorytelling.org/
-    name: Future of Storytelling
+    name: Video presentation
+
 image:
   filename: featured.png
   focal_point: Center
