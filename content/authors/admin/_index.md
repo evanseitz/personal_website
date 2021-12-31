@@ -12,9 +12,9 @@ role: Doctoral Candidate
 organizations:
 - name: Columbia University
   url: https://www.columbia.edu/
-- name: <sub>Dept. of Biological Sciences<sub>
+- name: <sub><sup>Dept. of Biological Sciences</sup></sub>
   url: https://www.biology.columbia.edu/
-- name: <sub>Dept. of Biochemistry and Molecular Biophysics<sub>
+- name: <sub>Dept. of Biochemistry and Molecular Biophysics</sub>
   url: https://www.biochem.cuimc.columbia.edu/
 
 # Short bio (displayed in user profile at end of posts)
