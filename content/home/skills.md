@@ -18,7 +18,7 @@ subtitle:
 feature:
 - description: Python, Bash, LaTeX, git
   icon: code
-  icon_pack: fab
+  icon_pack: fas
   name: Programming
 - description: Chimera, PyMOL, VMD, RELION, Prism
   icon: chart-area
