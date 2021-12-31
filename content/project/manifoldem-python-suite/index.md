@@ -4,7 +4,9 @@ subtitle: ""
 date: 2021-10-19
 summary: ""
 draft: false
-featured: false
+featured: true
+tags:
+  - Scientific
 links:
   - name: Software repository
     url: https://github.com/evanseitz/ManifoldEM_Python
