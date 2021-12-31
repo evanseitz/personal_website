@@ -52,18 +52,21 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/EESeitz
 - icon: google-scholar #graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: ai
   link: https://scholar.google.com/citations?user=S9FdJf4AAAAJ&hl=en
-- icon: github
-  icon_pack: fab
-  link: https://github.com/evanseitz
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/eeseitz
+- icon: github
+  icon_pack: fab
+  link: https://github.com/evanseitz
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/EESeitz
+- icon: vimeo
+  icon_pack: fab
+  link: https://vimeo.com/eeseitz
 - icon: cv
   icon_pack: ai
   link: "uploads/resume.pdf"
@@ -84,4 +87,4 @@ highlight_name: true
 
 My name is Evan Seitz and I am a doctoral candidate in the [Frank Lab](https://joachimfranklab.org/) at [Columbia University](https://www.columbia.edu/) in New York City. My thesis work is based on a geometric machine-learning approach to study hundreds of thousands of unorganized, extremely noisy single-particle cryo-EM images of an ensemble of biomolecules. Specifically, I use manifold embedding to elucidate metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures. In general, I am interested in studying complex biophysical systems through a mathematically-rigorous and creative lens. 
 
-Almost a decade ago, previous to my scientific endeavors, I was an artist. Although my path has changed, I still love to design and find ways to incorporate those skills into my scientific work. As for me personally, I love learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, playing sports like tennis, and team-based computer games.
+Almost a decade ago, previous to my scientific endeavors, I was an [artist](https://vimeo.com/eeseitz). Although my path has changed, I still love to design and find ways to incorporate those skills into my scientific work. As for me personally, I love learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, playing sports like tennis, and team-based computer games.
