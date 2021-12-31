@@ -64,8 +64,8 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/eeseitz
-- icon: CV
-  icon_pack: ai
+- icon: linkedin
+  icon_pack: fad
   link: uploads/resume.pdf
 
 # Link to a PDF of your resume/CV.
