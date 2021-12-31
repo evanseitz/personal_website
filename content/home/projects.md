@@ -27,10 +27,10 @@ content:
   filter_button:
   - name: Scientific
     tag: Scientific
-  - name: Artistic
-    tag: Artistic
-  - name: Both
-    tag: Both
+  - name: Educational
+    tag: Educational
+  - name: All
+    tag: '*'
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
