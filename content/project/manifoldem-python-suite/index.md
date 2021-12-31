@@ -13,7 +13,7 @@ links:
   - url: https://www.dropbox.com/s/pe106oizw4p7uyb/GUI_Overview_VATPase.mp4?dl=0
     name: Video demonstration
 image:
-  filename: cover_art_7.png
+  filename: featured.png
   focal_point: Center
   preview_only: false
 ---
