@@ -7,7 +7,7 @@ tags:
   - Educational
 links:
   - url: https://futureofstorytelling.org/video/jennifer-aaker-the-happiness-narrative
-    name: Animated Segment
+    name: Presentation
   - url: https://futureofstorytelling.org/
     name: Future of Storytelling
 image:
