@@ -34,8 +34,6 @@ image:
   
 links: 
 - name: Code
-- icon: github
-  icon_pack: fab
   url: https://github.com/evanseitz/POLARIS
   
 date: 2020-01-30
