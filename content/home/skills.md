@@ -16,18 +16,18 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- description: *Python*, Bash, R, git
+- description: Python, Bash, LaTeX, git
   icon: code
   icon_pack: fab
   name: Programming
-- description: 100%
-  icon: chart-line
+- description: Scientific software
+  icon: chart-area
   icon_pack: fas
-  name: Statistics
-- description: 10%
-  icon: camera-retro
+  name: Chimera, PyMOL, VMD, RELION, Prism
+- description: Visualization software
+  icon: photo-video
   icon_pack: fas
-  name: Photography
+  name: Adobe CS, Cinema4D, Final Cut Pro, GIMP
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
