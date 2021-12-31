@@ -64,6 +64,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/eeseitz
+- icon: vimeo
+  icon_pack: fab
+  link: https://vimeo.com/eeseitz
 - icon: cv
   icon_pack: ai
   link: "uploads/resume.pdf"
