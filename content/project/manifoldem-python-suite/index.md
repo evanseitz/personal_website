@@ -18,4 +18,4 @@ image:
   preview_only: false
 ---
 
-Determination of conformational continua of macromolecules from single-particle cryo-EM data
+Determination of conformational continua of biomolecules from single-particle cryo-EM data
