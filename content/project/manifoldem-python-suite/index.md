@@ -14,7 +14,7 @@ links:
     name: Video demonstration
 image:
   filename: cover_art_7.png
-  focal_point: Smart
+  focal_point: Center
   preview_only: false
 ---
 
