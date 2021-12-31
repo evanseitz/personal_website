@@ -20,7 +20,7 @@ bio: To be done.
 # Interests to show in About widget
 interests:
 - Biophysics
-- Quantitative Biology
+- Complex Systems
 - Machine Learning
 - Algorithm Design
 
