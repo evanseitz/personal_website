@@ -65,7 +65,7 @@ social:
   icon_pack: fab
   link: https://www.linkedin.com/in/eeseitz
 - icon: linkedin
-  icon_pack: fad
+  icon_pack: fab
   url: "uploads/resume.pdf"
 
 # Link to a PDF of your resume/CV.
