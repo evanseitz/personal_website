@@ -1,5 +1,5 @@
 ---
-title: "POLARIS: Path of least action analysis on energy landscapes. J Chem Inf Model, 2020."
+title: "POLARIS: Path of least action analysis on energy landscapes. J Chem Inf Model, 2020"
 publication_types:
   - "2"
 authors:
