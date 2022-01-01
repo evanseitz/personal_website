@@ -1,5 +1,5 @@
 ---
-title: A glycan gate controls opening of the SARS-CoV-2 spike protein (2021)
+title: A glycan gate controls opening of the SARS-CoV-2 spike protein (Nature Chemistry, 2021)
 publication_types:
   - "2"
 authors:
