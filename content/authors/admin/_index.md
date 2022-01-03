@@ -89,4 +89,4 @@ My name is Evan Seitz and I am a doctoral candidate in the [Frank Lab](https://j
 
 Almost a decade ago, previous to my scientific endeavors, I was an [artist](https://vimeo.com/eeseitz). Although my path has changed, I still love to design and find ways to incorporate those skills into my scientific work. As for me personally, I enjoy learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, bicycling, playing sports like tennis, and team-based computer games.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}curriculum vitae{{< /staticref >}}.
+This website provides an overview of my work. For more information, {{< icon name="download" pack="fas" >}} download my {{< staticref "uploads/resume.pdf" "newtab" >}}curriculum vitae{{< /staticref >}}.
