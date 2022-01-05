@@ -42,9 +42,9 @@ image:
   
 links:
 - name: PDF
-  url: "uploads/ESPER.pdf"
+  url: "uploads/ESPER.pdf" "newtab"
 - name: SI
-  url: "uploads/ESPER_suppl.pdf"
+  url: "uploads/ESPER_suppl.pdf" "newtab"
 - name: Cite
   url: "uploads/ESPER_cite.bib"
 - name: Code
