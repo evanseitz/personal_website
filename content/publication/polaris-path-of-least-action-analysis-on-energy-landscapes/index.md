@@ -34,6 +34,16 @@ image:
   
 links: 
 - name: Code
+  url: 
+  
+links:
+- name: PDF
+  url: "uploads/POLARIS.pdf"
+- name: SI
+  url: "uploads/POLARIS_suppl.pdf"
+- name: Cite
+  url: "uploads/POLARIS_cite.bib"
+- name: Code
   url: https://github.com/evanseitz/POLARIS
   
 date: 2020-01-30
