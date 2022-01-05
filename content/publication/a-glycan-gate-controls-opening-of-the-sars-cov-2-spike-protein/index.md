@@ -48,5 +48,14 @@ image:
   filename: featured
   focal_point: Smart
   preview_only: false
+links:
+- name: PDF
+  url: "uploads/GlycanGate.pdf"
+- name: SI
+  url: "uploads/GlycanGate_suppl.pdf"
+- name: Cite
+  url: "uploads/GlycanGate_cite.bib"
+- name: Code
+  url: https://github.com/evanseitz/cryoEM_ESPER
 date: 2021-08-19
 ---
