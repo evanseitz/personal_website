@@ -34,8 +34,12 @@ image:
   filename: featured
   focal_point: Smart
   preview_only: false
-
-links: 
+  
+links:
+- name: PDF
+  url: "uploads/SynthContinuum.pdf"
+- name: Cite
+  url: "uploads/SynthContinuum_cite.bib"
 - name: Code
   url: https://github.com/evanseitz/cryoEM_synthetic_generation
   
