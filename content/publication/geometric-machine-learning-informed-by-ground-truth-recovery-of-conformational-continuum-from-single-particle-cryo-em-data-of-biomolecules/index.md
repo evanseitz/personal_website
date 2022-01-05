@@ -42,7 +42,7 @@ image:
   
 links:
 - name: PDF
-  url: {{% staticref "uploads/ESPER.pdf" "newtab" %}}PDF{{% /staticref %}}
+  url: "uploads/ESPER.pdf"
 - name: SI
   url: "uploads/ESPER_suppl.pdf"
 - name: Cite
