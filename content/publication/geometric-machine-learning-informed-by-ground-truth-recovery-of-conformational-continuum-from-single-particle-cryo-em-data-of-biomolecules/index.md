@@ -46,7 +46,7 @@ links:
 - name: SI
   url: "uploads/ESPER_suppl.pdf"
 - name: Cite
-  url: "uploads/ESPER_cite.bib"
+  url: uploads/ESPER_cite.bib
 - name: Code
   url: https://github.com/evanseitz/cryoEM_ESPER
   
