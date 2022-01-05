@@ -40,7 +40,13 @@ image:
   focal_point: Smart
   preview_only: false
   
-links: 
+links:
+- name: PDF
+  url: "uploads/ESPER_Main.pdf"
+- name: SI
+  url: "uploads/ESPER_SM.pdf"
+- name: Cite
+  url: "uploads/geo-mach-learn-cite.bib"
 - name: Code
   url: https://github.com/evanseitz/cryoEM_ESPER
   
