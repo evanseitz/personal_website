@@ -30,7 +30,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: Expected PhD in Biological Sciences
+  - course: PhD in Computational Biophysics, with distinction
     institution: Columbia University
     year: 2022
   - course: MPhil in Biological Sciences
@@ -85,7 +85,7 @@ email: ""
 highlight_name: true
 ---
 
-My name is Evan Seitz and I am a doctoral candidate in the [Frank Lab](https://joachimfranklab.org/) at [Columbia University](https://www.columbia.edu/) in New York City. I am interested in studying complex biophysical systems through a mathematically-rigorous and creative lens. My thesis work is based on a geometric machine-learning approach to study hundreds of thousands of unorganized, extremely noisy single-particle cryo-EM images of an ensemble of biomolecules. Specifically, I use manifold embedding to elucidate metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures.  
+My name is Evan Seitz and I recently obtained a doctorate with distinction at [Columbia University](https://www.columbia.edu/) working on Computational Biophysics in the [Frank Lab](https://joachimfranklab.org/). I am interested in studying complex biophysical systems through a mathematically-rigorous and creative lens. My thesis work is based on a geometric machine-learning approach to study hundreds of thousands of unorganized, extremely noisy single-particle cryo-EM images of an ensemble of biomolecules. Specifically, I use manifold embedding to elucidate metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures.  
 
 Almost a decade ago, previous to my scientific endeavors, I was an [artist](https://vimeo.com/eeseitz). Although my path has changed, I still love to design and find ways to incorporate those skills into my scientific work. As for me personally, I enjoy learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, bicycling, playing sports like tennis, and team-based computer games.
 
