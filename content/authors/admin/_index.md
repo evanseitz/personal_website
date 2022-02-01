@@ -30,7 +30,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Computational Biophysics, with distinction
+  - course: PhD in Computational Biophysics
     institution: Columbia University
     year: 2022
   - course: MPhil in Biological Sciences
