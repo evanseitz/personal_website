@@ -6,7 +6,7 @@ title: Evan Seitz
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Candidate
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
