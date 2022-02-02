@@ -22,6 +22,8 @@ links:
   url: "uploads/thesis.pdf"
 - name: Cite
   url: "uploads/thesis_cite.bib"
+- name: Distinction
+  url: "uploads/thesis_dist.pdf"
   
 date: 2022-02-02T16:16:20.166Z
 ---
