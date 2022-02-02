@@ -4,12 +4,11 @@ title: "Geometric machine learning informed by ground truth: Recovery of
 publication_types:
   - "3"
 authors:
-  - Seitz
-  - Evan and Acosta-Reyes
-  - Francisco and Maji
-  - Suvrajit and Schwander
-  - Peter and Frank
-  - Joachim
+  - Evan Seitz
+  - Francisco Acosta-Reyes
+  - Suvrajit Maji
+  - Peter Schwander
+  - Joachim Frank
 doi: 10.1101/2021.06.18.449029
 publication: bioRxiv
 publication_short: bioRxiv
