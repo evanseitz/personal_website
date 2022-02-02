@@ -3,9 +3,8 @@ title: "POLARIS: Path of least action analysis on energy landscapes. J Chem Inf 
 publication_types:
   - "2"
 authors:
-  - Seitz
-  - Evan and Frank
-  - Joachim
+  - Evan Seitz
+  - Joachim Frank
 doi: 10.1021/acs.jcim.9b01108
 publication: Journal of Chemical Information and Modeling
 publication_short: J. Chem. Inf. Model
