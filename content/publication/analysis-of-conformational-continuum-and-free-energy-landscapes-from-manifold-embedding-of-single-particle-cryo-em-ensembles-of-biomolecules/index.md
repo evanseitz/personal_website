@@ -1,6 +1,6 @@
 ---
 title: Analysis of Conformational Continuum and Free-energy Landscapes from
-  Manifold Embedding of Single-particle Cryo-EM Ensembles of Biomolecules
+  Manifold Embedding of Single-particle Cryo-EM Ensembles of Biomolecules. Doctoral Thesis, Columbia Libraries, 2022
 publication_types:
   - "7"
 authors:
