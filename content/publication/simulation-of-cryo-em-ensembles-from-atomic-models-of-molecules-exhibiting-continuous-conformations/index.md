@@ -4,11 +4,10 @@ title: Simulation of cryo-EM ensembles from atomic models of molecules
 publication_types:
   - "3"
 authors:
-  - Seitz
-  - Evan and Acosta-Reyes
-  - Francisco and Schwander
-  - Peter and Frank
-  - Joachim
+  - Evan Seitz
+  - Francisco Acosta-Reyes
+  - Peter Schwander
+  - Joachim Frank
 doi: 10.1101/864116
 publication: bioRxiv
 publication_short: bioRxiv
