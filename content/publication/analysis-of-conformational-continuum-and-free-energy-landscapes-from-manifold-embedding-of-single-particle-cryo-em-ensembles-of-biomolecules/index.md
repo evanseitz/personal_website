@@ -4,8 +4,7 @@ title: Analysis of Conformational Continuum and Free-energy Landscapes from
 publication_types:
   - "7"
 authors:
-  - Seitz
-  - Evan
+  - Evan Seitz
 doi: https://doi.org/10.7916/4n0v-wa24
 publication: Columbia University Libraries
 abstract: ""
@@ -17,5 +16,12 @@ image:
   filename: featured
   focal_point: Smart
   preview_only: false
+  
+links:
+- name: PDF
+  url: "uploads/thesis.pdf"
+- name: Cite
+  url: "uploads/thesis_cite.bib"
+  
 date: 2022-02-02T16:16:20.166Z
 ---
