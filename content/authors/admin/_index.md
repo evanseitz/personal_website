@@ -6,16 +6,14 @@ title: Evan Seitz
 superuser: true
 
 # Role/position/tagline
-role: Postdoctoral Researcher
+role: Computational Postdoctoral Fellow
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Columbia University
-  url: https://www.columbia.edu/
-- name: Dept. of Biological Sciences
-  url: https://www.biology.columbia.edu/
-- name: Dept. of Biochemistry and Molecular Biophysics
-  url: https://www.biochem.cuimc.columbia.edu/
+- name: Cold Spring Harbor Laboratory
+  url: https://www.cshl.edu/
+- name: Simons Center for Quantitative Biology
+  url: https://www.cshl.edu/research/quantitative-biology/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Computational Biophysicist
@@ -85,7 +83,9 @@ email: ""
 highlight_name: true
 ---
 
-My name is Evan Seitz and I recently obtained a doctorate with distinction at [Columbia University](https://www.columbia.edu/) working on Computational Biophysics in the [Frank Lab](https://joachimfranklab.org/). I am interested in studying complex biophysical systems through a mathematically-rigorous and creative lens. My thesis work is based on a geometric machine-learning approach to study hundreds of thousands of unorganized, extremely noisy single-particle cryo-EM images of an ensemble of biomolecules. Specifically, I use manifold embedding to elucidate metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures.  
+My name is Evan Seitz and I recently obtained a doctorate with distinction at [Columbia University](https://www.columbia.edu/) working on Computational Biophysics in the [Frank Lab](https://joachimfranklab.org/). I am interested in studying complex biophysical systems through a mathematically-rigorous and creative lens. My thesis work is based on a geometric machine-learning approach to study hundreds of thousands of unorganized, extremely noisy single-particle cryo-EM images of an ensemble of biomolecules. Specifically, I used manifold embedding to elucidate metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures.
+
+Recently, I've joined the Simons Center for Quantitative Biology at Cold Spring Harbor Laboratory as a Computational Postdoctoral Fellow. The research is formed in collaboration between the Kinney and Koo labs, with the goal to bridge the divide between "black-box" deep neural network models in genomics and mechanistically interpretable biophysical models of gene regulation.
 
 Almost a decade ago, previous to my scientific endeavors, my profession was in the [arts](https://vimeo.com/eeseitz) (specifically 2D and 3D animation and design). Although my path has changed, I still love to design and find ways to incorporate those skills into my scientific work. As for me personally, I enjoy learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, bicycling, playing sports like tennis, and team-based computer games.
 
