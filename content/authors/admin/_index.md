@@ -65,6 +65,9 @@ social:
 - icon: vimeo
   icon_pack: fab
   link: https://vimeo.com/eeseitz
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0001-6844-2444
 - icon: cv
   icon_pack: ai
   link: "uploads/resume.pdf"
