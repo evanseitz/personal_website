@@ -1,13 +1,13 @@
 ---
 title: Analysis of Conformational Continuum and Free-energy Landscapes from
-  Manifold Embedding of Single-particle Cryo-EM Ensembles of Biomolecules. Doctoral Thesis, Columbia Libraries, 2022
+  Manifold Embedding of Single-particle Cryo-EM Ensembles of Biomolecules
 publication_types:
   - "7"
 authors:
   - Evan Seitz
 doi: https://doi.org/10.7916/4n0v-wa24
 publication: Columbia University Libraries
-abstract: ""
+abstract: Doctoral Thesis, Columbia Libraries, 2022
 draft: false
 featured: false
 tags:
