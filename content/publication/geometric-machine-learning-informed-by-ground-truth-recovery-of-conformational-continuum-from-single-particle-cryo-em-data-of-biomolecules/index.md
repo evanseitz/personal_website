@@ -12,7 +12,7 @@ authors:
 doi: 10.1101/2021.06.18.449029
 publication: bioRxiv
 publication_short: bioRxiv
-abstract: "bioRxiv (preprint), 2021"
+abstract: "BioRxiv: preprint, 2021"
 draft: false
 featured: false
 tags:
