@@ -14,7 +14,7 @@ main:
     url: '#projects'
     weight: 30
   - name: Publications
-    url: '#publications'
+    url: '#publicationz'
     weight: 40
   - name: Preprints
     url: '#preprints'
