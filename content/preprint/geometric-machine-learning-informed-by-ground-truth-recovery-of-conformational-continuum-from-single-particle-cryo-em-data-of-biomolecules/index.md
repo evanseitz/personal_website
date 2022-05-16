@@ -2,7 +2,7 @@
 title: "Geometric machine learning informed by ground truth: Recovery of
   conformational continuum from single-particle cryo-EM data of biomolecules. bioRxiv, 2021"
 publication_types:
-  - "3"
+  - "4"
 authors:
   - Evan Seitz
   - Francisco Acosta-Reyes
