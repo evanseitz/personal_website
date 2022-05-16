@@ -114,9 +114,13 @@ avatar:
 publications:
   date_format: January 2006
   citation_style: apa
+preprints:
+  date_format: January 2006
+  citation_style: apa
 projects:
   post_view: 2
   publication_view: 2
+  preprint_view: 2
   talk_view: 2
 breadcrumb:
   page_types:
@@ -128,6 +132,7 @@ comments:
     book: true
     project: true
     publication: true
+    preprint: true
     event: true
   disqus:
     shortname: ''
