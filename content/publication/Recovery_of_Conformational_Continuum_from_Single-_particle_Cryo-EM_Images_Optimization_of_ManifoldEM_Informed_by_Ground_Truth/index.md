@@ -11,7 +11,7 @@ authors:
 doi: 10.1109/TCI.2022.3174801
 publication: IEEE Transactions on Computational Imaging
 publication_short: IEEE TCI
-abstract: IEEE: Transaction on Computational Imaging, 2022.
+abstract: TBD.
 draft: false
 featured: false
 tags:
