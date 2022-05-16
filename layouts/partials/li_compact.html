@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">{{ $item := . }}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{{/* Dynamic view adjusts to content type. */}}</span></p>
+<p class="p1"><span class="s1">{{ $show_authors_only := false }}{{/* Show authors only or full metadata? */}}</span></p>
+<p class="p1"><span class="s1">{{ $show_buttons := false }}</span></p>
+<p class="p1"><span class="s1">{{ $link := $item.RelPermalink }}</span></p>
+<p class="p1"><span class="s1">{{ $target := "" }}</span></p>
+<p class="p1"><span class="s1">{{ if $item.Params.external_link }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $link = $item.Params.external_link }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $target = "target=\"_blank\" rel=\"noopener\"" }}</span></p>
+<p class="p1"><span class="s1">{{ end }}</span></p>
+<p class="p1"><span class="s1">{{ if eq $item.Type "event" }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $show_authors_only = true }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $show_buttons = true }}</span></p>
+<p class="p1"><span class="s1">{{ else if eq $item.Type "publication" }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $show_authors_only = true }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $show_buttons = true }}</span></p>
+<p class="p1"><span class="s1">{{ else if eq $item.Type "project" }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $show_authors_only = true }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $show_buttons = true }}</span></p>
+<p class="p1"><span class="s1">{{ end }}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{{/* Get summary. */}}</span></p>
+<p class="p1"><span class="s1">{{ $summary := "" }}</span></p>
+<p class="p1"><span class="s1">{{ if $item.Params.summary }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $summary = $item.Params.summary | markdownify | emojify }}</span></p>
+<p class="p1"><span class="s1">{{ else if .Params.abstract }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $summary = .Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}</span></p>
+<p class="p1"><span class="s1">{{ else if $item.Summary }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ $summary = $item.Summary }}</span></p>
+<p class="p1"><span class="s1">{{ end }}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="media stream-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="media-body"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3 class="article-title mb-0 mt-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="{{$link}}" {{ $target | safeHTMLAttr }}&gt;{{ $item.Title }}&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ with $summary }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="article-style"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{.}}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ end }}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stream-meta article-metadata"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{{ if eq $item.Type "event" }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>{{ partial "functions/get_event_dates" $item }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ with $item.Params.location }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="middot-divider"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;{{ . }}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ end }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{{ end }}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{{ if and $show_authors_only $item.Params.authors }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ partial "page_metadata_authors" $item }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{{ else if not $show_authors_only }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ partial "page_metadata" (dict "page" $item "is_list" 1) }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{{ end }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ if $show_buttons }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="btn-links"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{{ partial "page_links" (dict "page" $item "is_list" 1) }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ end }}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="ml-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ with $resource }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $filters := slice (images.GaussianBlur 21) (images.Pixelate 8) }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $image := .Resize "150x" }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{ $image_lq := (.Resize "150x q1").Filter $filters }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="{{$link}}" {{ $target | safeHTMLAttr }}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;img src="{{ $image_lq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="lazyload"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{{end}}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+</body>
+</html>
