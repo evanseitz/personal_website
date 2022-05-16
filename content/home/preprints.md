@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 115
 
-title: Preprints
-subtitle: ''
+title: Publications
+subtitle: 'Preprints'
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -35,5 +35,5 @@ design:
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 1
+  view: 4
 ---
