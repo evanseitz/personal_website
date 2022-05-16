@@ -11,7 +11,7 @@ authors:
 doi: 10.1101/864116
 publication: bioRxiv
 publication_short: bioRxiv
-abstract: "BioRxiv: preprint, 2019"
+abstract: "BioRxiv: Preprint, 2019"
 draft: false
 featured: false
 tags:
