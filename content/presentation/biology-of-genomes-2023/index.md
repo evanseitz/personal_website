@@ -16,7 +16,7 @@ links:
     name: Website
     
 image:
-  filename: biology-of-genomes-cover
+  filename: biology-of-genomes-cover.png
   focal_point: Center
   preview_only: false
 ---
