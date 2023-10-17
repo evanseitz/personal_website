@@ -16,9 +16,9 @@ links:
     name: Website
     
 image:
-  filename: biology-of-genomes-cover.png
+  filename: featured.png
   focal_point: Center
   preview_only: false
 ---
 
-Poster presentation titled: A surrogate modeling framework for interpreting deep neural networks in functional genomics.
+Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics.
