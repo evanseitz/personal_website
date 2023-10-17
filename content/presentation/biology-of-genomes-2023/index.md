@@ -18,7 +18,7 @@ links:
     name: Website
     
 image:
-  filename: featured.png
+  filename: featured.HEIC
   focal_point: Center
   preview_only: false
 ---
