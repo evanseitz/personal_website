@@ -10,15 +10,13 @@ tags:
 links:
   - name: Abstract
     url: "uploads/biology-of-genomes-page.pdf"
-  - name: Booklet
-    url: "uploads/biology-of-genomes-book.pdf"
-  - url: "uploads/biology-of-genomes-photo.png"
+  - url: "uploads/biology-of-genomes-photo1.png"
     name: Photo
   - url: https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=23
     name: Website
     
 image:
-  filename: featured.png
+  filename: biology-of-genomes-cover
   focal_point: Center
   preview_only: false
 ---
