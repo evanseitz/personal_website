@@ -23,4 +23,4 @@ image:
   preview_only: false
 ---
 
-A surrogate modeling framework for interpreting deep neural networks in functional genomics.
+Poster presentation titled: A surrogate modeling framework for interpreting deep neural networks in functional genomics.
