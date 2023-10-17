@@ -1,9 +1,8 @@
 ---
-title: Biology of Genomes (May 2023)
+title: ManifoldEM Python Suite (2021)
 subtitle: ""
-date: 2023-05
-summary: "A surrogate modeling framework for interpreting deep
-neural networks in functional genomics"
+date: 2021-10-19
+summary: ""
 draft: false
 featured: true
 tags:
