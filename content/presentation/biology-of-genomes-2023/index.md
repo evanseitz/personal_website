@@ -9,11 +9,11 @@ tags:
   - Scientific
 links:
   - name: Abstract
-    url: https://github.com/evanseitz/ManifoldEM_Python
-  - url: https://github.com/evanseitz/ManifoldEM_Python/blob/main/ManifoldEM_Manual_Beta.pdf
-    name: Photo 1
-  - url: https://github.com/evanseitz/ManifoldEM_Python/blob/main/ManifoldEM_Manual_Beta.pdf
-    name: Photo 2
+    url: "uploads/biology-of-genomes-page.pdf"
+  - name: Booklet
+    url: "uploads/biology-of-genomes-book.pdf"
+  - url: "uploads/biology-of-genomes-photo.HEIC"
+    name: Photo
   - url: https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=23
     name: Website
     
