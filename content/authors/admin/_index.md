@@ -59,15 +59,18 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/evanseitz
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/EESeitz
+#- icon: twitter
+  #icon_pack: fab
+  #link: https://twitter.com/EESeitz
 - icon: vimeo
   icon_pack: fab
   link: https://vimeo.com/eeseitz
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0001-6844-2444
+- icon: semantic-scholar
+  icon_pack: ai
+  link: https://www.semanticscholar.org/author/Evan-Seitz/133925165 
 - icon: cv
   icon_pack: ai
   link: "uploads/resume.pdf"
