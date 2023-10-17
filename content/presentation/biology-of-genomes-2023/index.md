@@ -11,9 +11,12 @@ links:
   - name: Abstract
     url: https://github.com/evanseitz/ManifoldEM_Python
   - url: https://github.com/evanseitz/ManifoldEM_Python/blob/main/ManifoldEM_Manual_Beta.pdf
-    name: User manual
-  - url: https://www.dropbox.com/s/pe106oizw4p7uyb/GUI_Overview_VATPase.mp4?dl=0
-    name: Video demonstration
+    name: Photo 1
+  - url: https://github.com/evanseitz/ManifoldEM_Python/blob/main/ManifoldEM_Manual_Beta.pdf
+    name: Photo 2
+  - url: https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=23
+    name: Website
+    
 image:
   filename: featured.png
   focal_point: Center
