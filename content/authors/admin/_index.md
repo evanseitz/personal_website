@@ -53,24 +53,24 @@ social:
 - icon: google-scholar #graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: ai
   link: https://scholar.google.com/citations?user=S9FdJf4AAAAJ&hl=en
+#- icon: twitter
+  #icon_pack: fab
+  #link: https://twitter.com/EESeitz
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0001-6844-2444
+- icon: semantic-scholar
+  icon_pack: ai
+  link: https://www.semanticscholar.org/author/Evan-Seitz/133925165
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/eeseitz
 - icon: github
   icon_pack: fab
   link: https://github.com/evanseitz
-#- icon: twitter
-  #icon_pack: fab
-  #link: https://twitter.com/EESeitz
 - icon: vimeo
   icon_pack: fab
   link: https://vimeo.com/eeseitz
-- icon: orcid
-  icon_pack: ai
-  link: https://orcid.org/0000-0001-6844-2444
-- icon: semantic-scholar
-  icon_pack: ai
-  link: https://www.semanticscholar.org/author/Evan-Seitz/133925165 
 - icon: cv
   icon_pack: ai
   link: "uploads/resume.pdf"
