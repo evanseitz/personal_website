@@ -12,13 +12,13 @@ links:
     url: "uploads/biology-of-genomes-page.pdf"
   - name: Booklet
     url: "uploads/biology-of-genomes-book.pdf"
-  - url: "uploads/biology-of-genomes-photo.HEIC"
+  - url: "uploads/biology-of-genomes-photo.png"
     name: Photo
   - url: https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=23
     name: Website
     
 image:
-  filename: featured.HEIC
+  filename: featured.png
   focal_point: Center
   preview_only: false
 ---
