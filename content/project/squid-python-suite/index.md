@@ -18,6 +18,6 @@ image:
   preview_only: false
 ---
 
-Public release of the [SQUID Python suite](https://github.com/evanseitz/squid-nn) for interpreting cis-regulatory mechanisms from genomic deep neural networks using surrogate models. This software was developed in the [Kinney](https://kinneylab.labsites.cshl.edu/) and [Koo](https://koolab.cshl.edu/) research groups at [Cold Spring Harbor Laboratory](https://www.cshl.edu/) in collaboration with [David McCandlish](https://www.cshl.edu/research/faculty-staff/david-mccandlish/).
+Public release of the [SQUID Python suite](https://github.com/evanseitz/squid-nn) for interpreting cis-regulatory mechanisms from genomic deep neural networks using surrogate models. This software was developed in the [Kinney lab](https://kinneylab.labsites.cshl.edu/) and [Koo lab](https://koolab.cshl.edu/)  at [Cold Spring Harbor Laboratory](https://www.cshl.edu/).
 
 
