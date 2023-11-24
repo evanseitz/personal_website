@@ -9,9 +9,9 @@ tags:
   - Scientific
 links:
   - name: Poster
-  - url: "uploads/genome-informatics-poster.png"
-  - url: https://meetings.cshl.edu/meetings.aspx?meet=info&year=23
-    name: Website
+    url: "uploads/genome-informatics-poster.png"
+  - name: Website
+    url: https://meetings.cshl.edu/meetings.aspx?meet=info&year=23
     
 ---
 
