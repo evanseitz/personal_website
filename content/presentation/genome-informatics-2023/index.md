@@ -9,10 +9,12 @@ tags:
   - Scientific
 links:
   - name: Poster
-    url: "uploads/genome-informatics-poster.png"
+    url: "uploads/genome-informatics-poster.pdf"
   - name: Website
     url: https://meetings.cshl.edu/meetings.aspx?meet=info&year=23
     
 ---
 
-Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics. Authors: Evan E Seitz, David M McCandlish, Justin B Kinney, Peter K Koo.
+Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics.
+
+Authors: Evan E Seitz, David M McCandlish, Justin B Kinney, Peter K Koo.
