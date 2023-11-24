@@ -1,5 +1,5 @@
 ---
-title: Biology of Genomes (May 2023)
+title: Biology of Genomes
 subtitle: ""
 date: 2023-05-09
 summary: ""
@@ -25,6 +25,4 @@ image:
   preview_only: false
 ---
 
-Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics. 
-
-Authors: Evan E Seitz, Justin B Kinney and Peter K Koo.
+Evan E Seitz, Justin B Kinney and Peter K Koo. "A surrogate modeling framework for interpreting deep neural networks in functional genomics". Biology of Genomes, May 2023.

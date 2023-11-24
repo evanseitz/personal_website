@@ -1,5 +1,5 @@
 ---
-title: Genome Informatics (Dec. 2023)
+title: Genome Informatics
 subtitle: ""
 date: 2023-05-09
 summary: ""
@@ -8,8 +8,8 @@ featured: true
 tags:
   - Scientific
 links:
-  - name: Abstract
-    url: "uploads/biology-of-genomes-page.pdf"
+  - name: Poster
+    url: "uploads/genome-informatics-poster.pdf"
   - url: https://meetings.cshl.edu/meetings.aspx?meet=info&year=23
     name: Website
     
@@ -19,6 +19,4 @@ image:
   preview_only: false
 ---
 
-Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics. 
-
-Authors: Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo.
+Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "A surrogate modeling framework for interpreting deep neural networks in functional genomics". Genome Informatics, December 2023.
