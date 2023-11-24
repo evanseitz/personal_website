@@ -1,5 +1,5 @@
 ---
-title: Biology of Genomes (test)
+title: Genome Informatics (Dec. 2023)
 subtitle: ""
 date: 2023-05-09
 summary: ""
@@ -10,13 +10,7 @@ tags:
 links:
   - name: Abstract
     url: "uploads/biology-of-genomes-page.pdf"
-  - url: "uploads/biology-of-genomes-photo1.png"
-    name: Photo 1
-  - url: "uploads/biology-of-genomes-photo2.png"
-    name: Photo 2
-  - url: "uploads/biology-of-genomes-photo3.png"
-    name: Photo 3
-  - url: https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=23
+  - url: https://meetings.cshl.edu/meetings.aspx?meet=info&year=23
     name: Website
     
 image:
@@ -27,4 +21,4 @@ image:
 
 Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics. 
 
-Authors: Evan E Seitz, Justin B Kinney and Peter K Koo.
+Authors: Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo.
