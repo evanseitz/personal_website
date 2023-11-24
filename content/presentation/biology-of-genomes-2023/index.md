@@ -25,4 +25,4 @@ image:
   preview_only: false
 ---
 
-Evan E Seitz, Justin B Kinney and Peter K Koo. "A surrogate modeling framework for interpreting deep neural networks in functional genomics". Biology of Genomes, May 2023.
+Evan E Seitz, Justin B Kinney and Peter K Koo. "A surrogate modeling framework for interpreting deep neural networks in functional genomics", Biology of Genomes, May 2023.
