@@ -15,4 +15,4 @@ links:
     
 ---
 
-Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics.
+Poster presentation title: A surrogate modeling framework for interpreting deep neural networks in functional genomics. Authors: Evan E Seitz, David M McCandlish, Justin B Kinney, Peter K Koo.
