@@ -1,5 +1,5 @@
 ---
-title: Poster at Biology of Genomes (2023)
+title: Poster at Biology of Genomes (CSHL)
 subtitle: ""
 date: 2023-05-09
 summary: ""
