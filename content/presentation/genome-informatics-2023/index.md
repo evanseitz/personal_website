@@ -1,5 +1,5 @@
 ---
-title: Genome Informatics (poster)
+title: Poster at Genome Informatics (2023)
 subtitle: ""
 date: 2023-05-09
 summary: ""
