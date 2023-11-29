@@ -1,5 +1,5 @@
 ---
-title: Genome Informatics (2023)
+title: Genome Informatics (poster)
 subtitle: ""
 date: 2023-05-09
 summary: ""
@@ -21,4 +21,4 @@ image:
   preview_only: false
 ---
 
-Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. Poster presentation: "A surrogate modeling framework for interpreting deep neural networks in functional genomics", Genome Informatics, December 2023.
+Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "A surrogate modeling framework for interpreting deep neural networks in functional genomics", Genome Informatics, December 2023.
