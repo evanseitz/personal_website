@@ -8,6 +8,8 @@ featured: true
 tags:
   - Scientific
 links:
+  - name: Abstract
+    url: "uploads/genome-informatics-page.pdf"
   - name: Poster
     url: "uploads/genome-informatics-poster.pdf"
   - url: https://meetings.cshl.edu/meetings.aspx?meet=info&year=23
