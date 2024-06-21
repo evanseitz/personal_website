@@ -7,10 +7,10 @@ authors:
   - David McCandlish 
   - Justin Kinney
   - Peter Koo
-doi: 10.1101/2023.11.14.567120
-publication: bioRxiv
-publication_short: bioRxiv
-abstract: "bioRxiv, 2023"
+doi: 10.1038/s42256-024-00851-5
+publication: Nature Machine Intelligence
+publication_short: Nat Mach Intell
+abstract: "Nat Mach Intell, 2024"
 draft: false
 featured: false
 tags:
@@ -25,7 +25,7 @@ links:
 - name: SI
   url: "uploads/squid_suppl.pdf"
 - name: Cite
-  url: "uploads/squid_cite.bib"
+  url: "uploads/squid_cite.ris"
 
-date: 2023-11-17
+date: 2024-06-21
 ---

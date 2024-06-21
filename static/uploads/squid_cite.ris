@@ -1,0 +1,15 @@
+TY  - JOUR
+AU  - Seitz, Evan E.
+AU  - McCandlish, David M.
+AU  - Kinney, Justin B.
+AU  - Koo, Peter K.
+PY  - 2024
+DA  - 2024/06/21
+TI  - Interpreting cis-regulatory mechanisms from genomic deep neural networks using surrogate models
+JO  - Nature Machine Intelligence
+AB  - Deep neural networks (DNNs) have greatly advanced the ability to predict genome function from sequence. However, elucidating underlying biological mechanisms from genomic DNNs remains challenging. Existing interpretability methods, such as attribution maps, have their origins in non-biological machine learning applications and therefore have the potential to be improved by incorporating domain-specific interpretation strategies. Here we introduce SQUID (Surrogate Quantitative Interpretability for Deepnets), a genomic DNN interpretability framework based on domain-specific surrogate modelling. SQUID approximates genomic DNNs in user-specified regions of sequence space using surrogate models—simpler quantitative models that have inherently interpretable mathematical forms. SQUID leverages domain knowledge to model cis-regulatory mechanisms in genomic DNNs, in particular by removing the confounding effects that nonlinearities and heteroscedastic noise in functional genomics data can have on model interpretation. Benchmarking analysis on multiple genomic DNNs shows that SQUID, when compared to established interpretability methods, identifies motifs that are more consistent across genomic loci and yields improved single-nucleotide variant-effect predictions. SQUID also supports surrogate models that quantify epistatic interactions within and between cis-regulatory elements, as well as global explanations of cis-regulatory mechanisms across sequence contexts. SQUID thus advances the ability to mechanistically interpret genomic DNNs.
+SN  - 2522-5839
+UR  - https://doi.org/10.1038/s42256-024-00851-5
+DO  - 10.1038/s42256-024-00851-5
+ID  - Seitz2024
+ER  - 
