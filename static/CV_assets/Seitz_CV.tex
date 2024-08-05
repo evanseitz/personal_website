@@ -1,0 +1,1038 @@
+% TeXShop: Command-T
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% http://www.tedpavlic.com/post_resume_cv_latex_example.php
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+\RequirePackage[T1]{fontenc}
+
+% LaTeX will typeset using Computer Modern Roman, which a lot of
+% non-mathematicians and non-engineers won't like. Also, a few PDF
+% viewers may not render CMR very well. Instead, Times New Roman can
+% be used. That's what this package does.
+\usepackage{times}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+% (NOTE: This requires the times package above)
+%\renewcommand{\familydefault}{\sfdefault}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% This package helps LaTeX auto-hyphenate hyphenated words if you use
+% special hyphens. For example, bio\-/mimicry will properly hyphenate
+% ``mimicry'' if necessary.
+\usepackage[shortcuts]{extdash}
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+%includefoot, % Uncomment to put page number above margin
+marginparwidth=1.2in,     % Length of section titles
+marginparsep=.05in,       % Space between titles and text
+margin=1in,               % 1 inch margins
+includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+% Provides special list environments and macros to create new ones
+\usepackage[shortlabels]{enumitem}
+
+% Simpler bibsections for CV sections
+% (thanks to natbib for inspiration)
+%
+% * For lists of references with hanging indents and no numbers:
+%
+%   \begin{bibsection}
+%       \item ...
+%   \end{bibsection}
+%
+% * For numbered lists of references (with hanging indents):
+%
+%   \begin{bibenum}
+%       \item ...
+%   \end{bibenum}
+%
+%   Note that bibenum numbers continuously throughout. To reset the
+%   counter, use
+%
+%   \restartlist{bibenum}
+%
+%   at the place where you want the numbering to reset.
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+{\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin=\bibhang,%
+	itemindent=-\bibhang,
+	itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+	topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=[\arabic*],resume,leftmargin={\bibhang+\widthof{[999]}},%
+	itemindent=-\bibhang,
+	itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+	topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+{0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+	\parbox{4in}{\, \hfill %
+		\arabic{page} of \protect\pageref*{LastPage} % +LP
+		%                    \arabic{page}                               % -LP
+		\hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+	linkcolor=darkblue,urlcolor=darkblue,
+	anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% HEADING AT TOP OF CURRICULUM VITAE
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[{\includegraphics[height=1.5in]{my_picture}}]{Your Name}
+%
+% the picture will be flush right across from the name. For this example
+% to work, make sure the extra set of curly braces is included. Also
+% makes ure that \usepackage{graphicx} is somewhere in the preamble.
+\newcommand{\makeheading}[2][]%
+{\hspace*{-\marginparsep minus \marginparwidth}%
+	\begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+		{\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+		\rule{\columnwidth}{1pt}%
+\end{minipage}}
+
+%%% SECTION HEADINGS
+
+% The section headings. Flush left in small caps down pseudo-margin.
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+	\vspace{1.3\baselineskip}%
+	\phantomsection\addcontentsline{toc}{section}{#1}%
+	\noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\hyphenpenalty=10000\raggedright #1}}}%
+	\vspace{-\baselineskip}\par}
+
+%%% LISTS
+
+% This macro alters a list by removing some of the space that follows the list
+% (is used by lists below)
+\newcommand*\fixendlist[1]{%
+	\expandafter\let\csname preFixEndListend#1\expandafter\endcsname\csname end#1\endcsname
+	\expandafter\def\csname end#1\endcsname{\csname preFixEndListend#1\endcsname\vspace{-0.6\baselineskip}}}
+
+% These macros help ensure that items in outer-type lists do not get
+% separated from the next line by a page break
+% (they are used by lists below)
+\let\originalItem\item
+\newcommand*\fixouterlist[1]{%
+	\expandafter\let\csname preFixOuterList#1\expandafter\endcsname\csname #1\endcsname
+	\expandafter\def\csname #1\endcsname{\let\oldItem\item\def\item{\pagebreak[2]\oldItem}\csname preFixOuterList#1\endcsname}
+	\expandafter\let\csname preFixOuterListend#1\expandafter\endcsname\csname end#1\endcsname
+	\expandafter\def\csname end#1\endcsname{\let\item\oldItem\csname preFixOuterListend#1\endcsname}}
+\newcommand*\fixinnerlist[1]{%
+	\expandafter\let\csname preFixInnerList#1\expandafter\endcsname\csname #1\endcsname
+	\expandafter\def\csname #1\endcsname{\let\oldItem\item\let\item\originalItem\csname preFixInnerList#1\endcsname}
+	\expandafter\let\csname preFixInnerListend#1\expandafter\endcsname\csname end#1\endcsname
+	\expandafter\def\csname end#1\endcsname{\csname preFixInnerListend#1\endcsname\let\item\oldItem}}
+
+% An itemize-style list with lots of space between items
+%
+% Usage:
+%   \begin{outerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{outerlist}
+\newlist{outerlist}{itemize}{3}
+\setlist[outerlist]{label=\enskip\textbullet,leftmargin=*}
+\fixendlist{outerlist}
+\fixouterlist{outerlist}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{lonelist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{lonelist}
+\newlist{lonelist}{itemize}{3}
+\setlist[lonelist]{label=\enskip\textbullet,leftmargin=*,partopsep=0pt,topsep=0pt}
+\fixendlist{lonelist}
+\fixouterlist{lonelist}
+
+% An itemize-style list with little space between items
+%
+% Usage:
+%   \begin{innerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{innerlist}
+\newlist{innerlist}{itemize}{3}
+\setlist[innerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+\fixinnerlist{innerlist}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{loneinnerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{loneinnerlist}
+\newlist{loneinnerlist}{itemize}{3}
+\setlist[loneinnerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+\fixendlist{loneinnerlist}
+\fixinnerlist{loneinnerlist}
+
+%%% EXTRA SPACE
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+%%% FORMATTING MACROS
+
+% Provides a linked \doi{#1} that links doi:#1 to http://dx.doi.org/#1
+\usepackage{doi}
+% To change the text before the DOI, adjust this command
+%\renewcommand\doitext{doi:}
+
+% Provides a linked \url{#1} that doesn't require escape characters
+\usepackage{url}
+
+% You can adjust the style \url{} uses here:
+% (options are: same, rm, sf, tt; defaults to tt)
+\urlstyle{same}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+% (uncomment to typeset the e\-/mail address in typewriter font;
+%  otherwise, will be typeset in the \urlstyle above)
+%\DeclareUrlCommand\emaillink{\urlstyle{tt}}
+\providecommand*\emaillink[1]{\nolinkurl{#1}}
+\providecommand*\email[1]{\href{mailto:#1}{\emaillink{#1}}}
+
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+% Custom hyphenation rules for words that LaTeX has trouble with
+\hyphenation{bio-mim-ic-ry bio-in-spi-ra-tion re-us-a-ble pro-vid-er Media-Wiki}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	\makeheading{Dr. Evan E. Seitz}%Dr.~Theodore~(Ted) P.~Pavlic}
+	
+	\section{Contact Information}
+	
+	% NOTE: Mind where the & separators and \\ breaks are in the following
+	%       table. Table is one row made up of three parboxes. The left
+	%       parbox has address info, the middle parbox has a vertical bar,
+	%       and the right parbox has phone and electronic contact
+	%       information.
+	%
+	% MACROS: \rcollength is the width of the right column of the table
+	%             (adjust it to your liking; default is 1.85in).
+	%         \spacewidth is width of area between left and right boxes.
+	%
+	\newlength{\rcollength}\setlength{\rcollength}{1.85in}%
+	\newlength{\spacewidth}\setlength{\spacewidth}{20pt}
+	%
+	\begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
+		
+		% Address box
+		\parbox{\textwidth-\rcollength-\spacewidth}{%
+			%Assistant Professor\\
+			%\href{http://www.asu.edu/}{Arizona State University}\\
+			%\href{http://cidse.engineering.asu.edu/}{School of Computing and Augmented Intelligence}\\
+			%PO Box 878809, Room 553\\
+			%Tempe, AZ  85287-8809  USA}
+			Postdoctoral Researcher\\
+			%Columbia University\\
+			%Department of Biological Sciences \&\\
+			%Department of Biochemistry and Molecular Biophysics\\
+			New York, NY 10032 USA\\
+			}
+		
+		&
+		% Uncomment to add a vertical bar in middle of contact information
+		%{\vrule width 0.5pt}
+		\parbox[m][5\baselineskip]{\spacewidth}{} &
+		
+		% Non-snail-mail contact information
+		%\parbox{\rcollength}{%
+			%\textit{Work:} +1-480-965-2899 \\
+			%\textit{Fax:} +1-480-965-2751 \\
+			%\textit{E-mail:} \email{tpavlic@asu.edu}\\
+			%\textit{WWW:} \href{http://www.tedpavlic.com/}{www.tedpavlic.com}}
+		\parbox{\rcollength}{%
+			\textit{Phone:} +1-404-964-9821 \\
+			%\textit{Fax:} +1-480-965-2751 \\
+			\textit{E-mail:} \email{evan.e.seitz@gmail.com}\\
+			\textit{WWW:} \href{https://www.evanseitz.com/}{www.evanseitz.com}}
+		
+	\end{tabular}
+	
+	%%
+	%% In modern CV's, it seems like ``Objective'' is frowned upon. Instead,
+	%% incorporate it into a well-constructed cover letter. The ``More
+	%% information'' can go at the end of the CV, but it should not distract
+	%% from the section giving references available to contact.
+	%%
+	%
+	% \section{Objective}
+	%
+	% Placement in an academic position (i.e., faculty, postdoctoral, or
+	% research scientist) that allows for advanced research in distributed
+	% complex adaptive systems (i.e., modeling, analysis, design, and
+	% verification) with a particular focus on the control of engineered
+	% agents (e.g., for communications, control, software, electronics, and
+	% sustainability) and the analysis of biological phenomena (e.g.,
+	% self-organization, ecological rationality)
+	% \begin{innerlist}
+	% \item More information and auxiliary documents can be found at\\\url{http://www.tedpavlic.com/facjobsearch/}
+	% \end{innerlist}
+	
+	\section{Research Interests}
+	
+	Navigating biological complexity through the application of machine learning models augmented by advanced interpretation techniques.
+	
+	\section{Current Academic Appointment}
+	
+	\href{https://www.cshl.edu/}{Cold Spring Harbor Laboratory},
+	Cold Spring Harbor, NY
+	\begin{outerlist}
+	
+		\item[] \textbf{Computational Postdoctoral Fellow}, March 2022 -- present
+	
+	\begin{innerlist}
+	
+
+		\item[$-$] Mentors:
+		\href{https://www.cshl.edu/research/faculty-staff/justin-kinney/} {Justin Kinney} and \href{https://www.cshl.edu/research/faculty-staff/peter-koo/} {Peter Koo} (co-P.I.s)
+		\item[$-$] Affiliations:
+			\begin{innerlist}
+				\item[] \href{https://www.cshl.edu/research/quantitative-biology/}{Simons Center for Quantitative Biology}
+			\end{innerlist}	
+		\item[$-$] Summary:	My postdoctoral work aims to develop advanced interpretation techniques to understand gene-regulatory mechanisms learned by black-box deep neural networks.
+		\item[$-$] Awards
+			\begin{innerlist}
+			\item[$-$] 
+			F32 Individual Postdoctoral Fellowship (2024). Awarded by the National Human Genome Research Institute of the National Institutes of Health. Award Number: F32HG013265.
+			\end{innerlist}
+	\end{innerlist}
+	
+	\end{outerlist}
+
+
+	\blankline
+		
+
+	\section{Education}
+	
+	\href{https://www.columbia.edu/}{\textbf{Columbia University}},
+	New York, NY
+	\begin{outerlist}
+		
+	\item[] \href{https://www.parchment.com/u/award/e36ca938bf02252b0de6b64c5800e246} {\textbf{Doctor of Philosophy}} with \href{https://www.evanseitz.com/uploads/thesis_dist.pdf}{distinction}, May 2017 -- January 2022
+	
+	\begin{innerlist}
+		\item[$-$] Doctoral Thesis:
+			\emph{Analysis of Conformational Continuum and Free-energy Landscapes from Manifold Embedding of Single-particle Cryo-EM Ensembles of Biomolecules}
+		\item[$-$] Mentor:
+		\href{https://joachimfranklab.org/}%
+		{Joachim Frank}
+		\item[$-$] Affiliations:
+			\begin{innerlist}
+				\item[] \href{https://www.biology.columbia.edu/}{Department of Biological Sciences}
+				\item[] \href{https://www.biochem.cuimc.columbia.edu/}{Department of Biochemistry and Molecular Biophysics}
+			\end{innerlist}	
+		\item[$-$] Summary:	My thesis work focused on the development, interpretation and refinement of a geometric machine-learning approach, called ManifoldEM, using manifold embedding to obtain the energy landscape and corresponding continuum of 3D structures of a molecular machine from an ensemble of cryo-EM images afflicted by low signal-to-noise ratio, random rotations and orientations in 3D space, and distortions introduced by microscopy aberrations. A complete description of my accomplishments is available in my thesis \href{https://academiccommons.columbia.edu/doi/10.7916/4n0v-wa24} {[1]}.
+		\item[$-$] Awards:
+			\begin{innerlist}
+			\item[] John S. Newberry Prize (2022). Awarded to the graduate student in the Department who, in the opinion of the faculty, is the "most promising student of the year in the field of vertebrate zoology". The awardee was chosen by faculty and staff nominations and consideration by the departmental faculty committee for graduate affairs.
+			\end{innerlist}		
+
+	\end{innerlist}
+
+	\item[] \href{https://www.parchment.com/u/award/d0de207f1d8ffa3a274d652565bdfad7} {\textbf{Master of Philosophy}}, May 2017 -- October 2020
+	\itemsep-.1em
+	\item[] \href{https://www.parchment.com/u/award/a8d324b4c360c0a6dcb5ea11eda0a2ec} {\textbf{Master of Arts}}, May 2017 -- May 2019
+
+		\begin{innerlist}
+			\item [$-$] Cumulative GPA: 3.74
+			\item [$-$] Core Courses: \emph{Advanced Genetic Analysis; Cell Biology; Eukaryotic Gene Expression; Genomics of Gene Regulation; Protein Thermodynamics; Structural Biology}
+			\item [$-$] Elective Courses: \emph{Computational Linear Algebra; Cryo-Electron Microscopy; Statistical Mechanics; Topology}
+		\end{innerlist}
+	
+	\item [] Pre-thesis Rotations:
+	\begin{innerlist}
+	\item [$-$] \href{http://califano.c2b2.columbia.edu/} {Califano Lab}, Fall 2017: I conducted research under the guidance of Dr. Andrea Califano, exploring cell regulatory networks using information-theoretic algorithms (ARACNE, FIRE) to identify a set of maximally-informative DNA sequence motifs associated with the FOXM1 master-regulator pathway implicated in tumorigenesis.
+	\item [$-$] \href{https://www.gautierlab.org/} {Gautier Lab}, Summer 2017: I conducted research under guidance of Dr. Jean Gautier, investigating the role of genome instability in cancer using various wet lab experiments--such as plasma purification, spectrophotometry, and electrophoresis--to isolate and analyze specific protein-gene interactions responsible for cellular response to DNA damage.
+\end{innerlist}
+
+	\end{outerlist}
+
+	\blankline
+
+	\href{https://www.gatech.edu/}{\textbf{Georgia Institute of Technology}},
+Atlanta, GA
+	\begin{outerlist}
+		\item[] \textbf{Bachelor of Science} in Physics with \emph{Highest Honor}, May 2015 -- May 2017
+		
+		\item [] Cumulative GPA: 3.90
+\begin{innerlist}
+	
+	\item [$-$] Core Courses: \emph{Classical Mechanics; Differential Equations; Electro and Magnetostatics; Electrodynamics; Linear Algebra for Calculus; Modern Physics; Quantum Mechanics I; Quantum Mechanics II; Statistical Mechanics; Thermodynamics}
+	\item [$-$] Elective Courses: \emph{Biophysics; Computational Physics; Neurophysics; Nuclei, Particles and Fields; Physics of Living Systems; Probability and Statistics}
+\end{innerlist}
+
+		\item[] Undergraduate Research
+			\begin{innerlist}
+				\item[$-$] Supervisor: Professor
+					\href{https://physics.gatech.edu/user/james-jc-gumbart}%
+	{James Gumbart}
+	\item[$-$] Summary: My undergraduate research in Computational Biophysics, supervised by Dr. James Gumbart, focused on simulating the molecular dynamics of the Light Harvesting Complex-II using NAMD and VMD. 
+
+\end{innerlist}
+
+		\item[] Activities and Awards
+			\begin{innerlist}
+			\item[$-$] \emph{Sigma Pi Sigma} Physics Honor Society
+			\item[$-$] Faculty Honors
+			\end{innerlist}
+	\end{outerlist}
+
+	\blankline
+	
+	\href{https://www.gsu.edu/}{\textbf{Georgia State University}},
+Atlanta, GA
+\begin{outerlist}
+	\item[] Initiated my pursuit towards a second degree (in Physics), May 2014 -- May 2015. Transferred from Georgia State University (without degree) to the Georgia Institute of Technology
+	
+	\item [] Cumulative GPA: 4.00
+	\begin{innerlist}
+		
+		\item [$-$] Core Courses: \emph{Calculus of One Variable I; Calculus of One Variable II; Multivariate Calculus; Principles of Chemistry I; Principles of Chemistry II; Principles of Physics I; Principles of Physics II}
+		\item [$-$] Elective Courses: \emph{Computer Programming in Python}
+	\end{innerlist}
+	
+	\item[] Activities and Awards
+	\begin{innerlist}
+		\item[$-$] President's List
+	\end{innerlist}
+\end{outerlist}
+
+\blankline	
+	
+\href{https://www.gcsu.edu/}{\textbf{Georgia College}},
+Milledgeville, GA
+\begin{outerlist}
+	\item[] \textbf{Bachelor of Arts} in Mass Communication, May 2005 -- May 2009
+	\item[] Activities and Awards
+\begin{innerlist}
+	\item[$-$] \emph{Lambda Pi Eta} Honor Society
+	\item[$-$] National Chair of International Business Club
+\end{innerlist}
+
+\end{outerlist}
+	
+
+	\section{Refereed\ \ \ \  Journal\ \ \ \  Publications}
+	
+		\begin{bibenum}
+			\item E. Seitz, D. McCandlish, J. Kinney and P. Koo, "Interpreting cis-regulatory mechanisms from genomic deep neural networks using surrogate models."\\Nat Mach Intell, 2024.\\\href{https://doi.org/10.1038/s42256-024-00851-5} {https://doi.org/10.1038/s42256-024-00851-5}
+		
+			\item E. Seitz, J. Frank and P. Schwander, "Beyond ManifoldEM: Geometric relationships between manifold embeddings of a continuum of 3D molecular structures and their 2D projections."\\RSC Digital Discovery, vol. 2, no. 3, pp. 702–717, 2023.\\\href{https://doi.org/10.1039/D2DD00128D} {https://doi.org/10.1039/D2DD00128D}
+		
+			\item E. Seitz, F. Acosta-Reyes, S. Maji, P. Schwander and J. Frank, “Recovery of conformational continuum from single-particle cryo-EM images: Optimization of ManifoldEM informed by ground truth.”\\IEEE Trans Comput Imaging, vol. 8, pp. 462-78, 2022.\\\href{https://ieeexplore.ieee.org/document/9773954} {https://ieeexplore.ieee.org/document/9773954}
+			
+			\item T. Sztain et al., “A glycan gate controls opening of the SARS-CoV-2 spike protein,”\\Nat Chem, vol. 13, pp. 963–8, 2021.\\\href{https://www.nature.com/articles/s41557-021-00758-3} {https://www.nature.com/articles/s41557-021-00758-3}
+		
+			\item E. Seitz and J. Frank, “POLARIS: Path of least action analysis on energy landscapes,”\\ACS J Chem Inf Model, vol. 60, no. 5, pp. 2581–90, 2020.\\\href{https://pubs.acs.org/doi/10.1021/acs.jcim.9b01108} {https://pubs.acs.org/doi/10.1021/acs.jcim.9b01108}
+	
+		\end{bibenum}
+	
+	\blankline
+			
+	
+
+	\section{Conference\ \ \ \ Posters}
+	
+
+		\begin{bibenum}
+			\item E. Seitz, J. Kinney and P. Koo. A surrogate modeling framework for interpreting deep neural networks in functional genomics.\\\href{https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=23}{The Biology of Genomes}, Cold Spring Harbor Laboratory, May 2023.
+			
+			\item E. Seitz, D. McCandlish, J. Kinney and P. Koo. A surrogate modeling framework for interpreting deep neural networks in functional genomics.\\\href{https://meetings.cshl.edu/meetings.aspx?meet=info&year=23}{Genome Informatics}, Cold Spring Harbor Laboratory, December 2023.
+	
+		\end{bibenum}
+
+	\blankline
+	
+	
+	\section{Book\ \ \ \ \ \ \ \ Chapters}
+
+		\begin{bibenum}
+			\item E. Seitz, J. Frank, POLARIS: Path of Least Action Analysis on Energy Landscapes. In: J. Frank, \textit{Novel Developments in Cryo-EM of Biological Molecules: Resolution in Time and State Space}, Jenny Stanford Publishing, ch. 8, pp. 151–175, 2023. ISBN: 9781003456100.
+			\item T. Sztain, S. Ahn, A. Bogetti, L. Casalino, J. Goldsmith, E. Seitz, R. McCool, F. Kearns, F. Acosta-Reyes, S. Maji, G. Mashayekhi, J. McCammon, A. Ourmazd, J. Frank, J. McLellan, L. Chong, R. Amaro, A Glycan Gate Controls Opening of the SARS-CoV-2 Spike Protein. In: J. Frank, \textit{Novel Developments in Cryo-EM of Biological Molecules: Resolution in Time and State Space}, Jenny Stanford Publishing, ch. 11, pp. 241–256, 2023. ISBN: 9781003456100.
+			\item E. Seitz, F. Acosta-Reyes, S. Maji, P. Schwander, J. Frank, Recovery of Conformational Continuum from Single-Particle Cryo-EM Images: Optimization of ManifoldEM Informed by Ground Truth. In: J. Frank, \textit{Novel Developments in Cryo-EM of Biological Molecules: Resolution in Time and State Space}, Jenny Stanford Publishing, ch. 12, pp. 242–288, 2023. ISBN: 9781003456100.
+		\end{bibenum}
+	
+	\blankline
+	
+	
+	\section{Other\ \ \ \ \ \ \ \ Publications}
+		
+		\begin{bibenum}
+			\item E. Seitz. \textit{Analysis of Conformational Continuum and Free-energy Landscapes from Manifold Embedding of Single-particle Cryo-EM Ensembles of Biomolecules}. PhD thesis.\\Columbia Libraries Academic Commons, 2022.\\\href{https://doi.org/10.7916/4n0v-wa24} {https://doi.org/10.7916/4n0v-wa24}
+	
+		\end{bibenum}
+	\blankline
+	
+	
+
+	\section{Grants}
+	\restartlist{bibenum}
+		\textbf{Awarded}
+		\begin{bibenum}
+    			\item F32 Individual Postdoctoral Fellowship, Awarded by the National Human Genome Research Institute of the National Institutes of Health. Award Number: F32HG013265. June 1, 2024 to May 31, 2027.
+		\end{bibenum}
+	\blankline
+	
+		
+	\section{Advising and Mentoring}
+	
+		\textbf{Undergraduate Research}
+
+		\begin{outerlist}
+    			\item \textbf{Nika Chuzhoy}\\
+			Undergraduate student in Computer Science, California Institute of Technology.
+			Computational research on surrogate modeling in functional genomics.
+			2023
+
+	\end{outerlist}
+	
+	\blankline
+	
+	
+	\section{Teaching Experience}
+	
+	\href{https://www.cshl.edu/}{\textbf{Cold Spring Harbor Laboratory}}, Cold Spring Harbor, NY
+	\begin{outerlist}
+
+		\item[] \textit{Invited Lecturer}%
+		\hfill \textbf{July 19, 2024}
+		\begin{innerlist}
+			\item Bioinformatics and Computational Neuroscience Lecture Series
+		\end{innerlist}
+	
+		\item[] \textit{Invited Lecturer}%
+		\hfill \textbf{July 21, 2023}
+		\begin{innerlist}
+			\item Bioinformatics and Computational Neuroscience Lecture Series
+		\end{innerlist}
+	\end{outerlist}
+		
+	\halfblankline
+	
+	
+	\href{http://www.columbia.edu/}{\textbf{Columbia University}},
+	New York, NY
+	\begin{outerlist}
+		
+		\item[] \textit{Teaching Assistant}%
+		\hfill \textbf{August~2018 -- December~2019}
+		\begin{innerlist}
+			\item Assistant Instructor for BCHM~GU4323: Biophysical Chemistry\\(Professors: \href{https://www.biology.columbia.edu/people/hunt} {Dr. John Hunt} and \href{https://www.biochem.cuimc.columbia.edu/research-labs/palmer-lab} {Dr. Art Palmer})
+			\begin{innerlist}
+				\item Fall 2019
+				\item Responsible for weekly 1-hour recitation lecture, proctoring and grading. This course covered a rigorous introduction to the theory underlying widely used biophysical methods to understand the behavior of molecules and develop related analytical tools, including applications to biomedical research problems.
+			\end{innerlist}
+			
+			\halfblankline
+			
+			\item Grader for BIOL~UN2005 Intro Biology: Biochemistry, Genetics \& Molecular Biology
+			\begin{innerlist}
+				\item Fall~2018
+				\item Proctored and graded exams.
+			\end{innerlist}
+			
+			\halfblankline
+			
+		\end{innerlist}
+	\end{outerlist}
+
+\href{https://www.gatech.edu/}{\textbf{Georgia Institute of Technology}},
+Atlanta, GA
+\begin{outerlist}
+	
+	\item[] \textit{Creative Director, Animator}%
+	\hfill \textbf{May~2016 -- February~2017}
+	\begin{innerlist}
+			\item Assisted the Department of Physics with the design and animation of educational content for Georgia Tech MOOC (massive online open courses) under advisement of \href{https://physics.gatech.edu/user/michael-schatz} {Dr. Michael Schatz}. Topics ranged from \emph{Introductory Mechanics} to \emph{Electromagnetism}. Duties included both scientific and artistic, beginning with the translation of physical concepts and theories into a visual language, and ending in the full production of animated video content for semester-long courses. After initial production, served as project lead on a team of animators for creating an extensive library of related videos for the university.
+			\item Lesson 1 -- Introduction to Electric Fields: \href{https://vimeo.com/237845454} {https://vimeo.com/237845454}
+		\end{innerlist}
+		
+		\halfblankline
+		
+\end{outerlist}
+
+
+\href{https://www.gsu.edu/}{\textbf{Georgia State University}},
+Atlanta, GA
+\begin{outerlist}
+	
+	\item[] \textit{Physics Learning Assistant}%
+	\hfill \textbf{Spring 2015}
+	\begin{innerlist}
+		\item Recruited into the Learning Assistant program to aid in the education of students taking \emph{Principles of Physics} under advisement of \href{https://www.researchgate.net/scientific-contributions/Joshua-Von-Korff-15134139} {Dr. Joshua Von Korff}. Duties included instruction of two one-hour Physics labs each week, attendance of weekly pedagogy lessons taught by Physics professors, and execution of a weekly theoretical practice lecture with graduate students.
+	\end{innerlist}
+	
+	\halfblankline
+	
+\end{outerlist}
+
+\href{https://www.stanford.edu/}{\textbf{Stanford University}},
+Stanford, CA
+\begin{outerlist}
+	
+	\item[] \textit{Creative Director, Animator}%
+	\hfill \textbf{2013, 2015}
+	\begin{innerlist}
+		\item Directed a team of animators for creating a series of educational videos detailing scientific research done by \href{https://www.gsb.stanford.edu/faculty-research/faculty/jennifer-lynn-aaker} {Dr. Jennifer Aaker} and colleagues at Stanford on topics including empathy, humor, and purpose.
+		\item The Happiness Narrative (2015): \href{https://vimeo.com/210360824} {https://vimeo.com/210360824}
+		\item Persuasion and the Power of Story (2013): \href{https://vimeo.com/74576399} {https://vimeo.com/74576399}
+	\end{innerlist}
+	
+	\halfblankline
+	
+\end{outerlist}
+
+
+\section{Professional Service}
+	\textbf{Referee Service}
+	\begin{innerlist}
+		\item \emph{Nature} (2024)
+		\item \emph{The American Journal of Human Genetics} (2024)
+		\item \emph{ICML AI4Science Workshop} (2024)
+		\item \emph{Cold Spring Harbor Perspectives in Biology} (2023) % “Is Novelty Predictable?” by C. Fannjiang and J. Listgarten
+		\item \emph{NeurIPS AI4Science Workshop} (2023)
+		\item \emph{NeurIPS Generative AI and Biology Workshop} (2023)
+		\item \emph{Nature} (2023)
+		\item \emph{ICML Workshop on Computational Biology} (2023)
+		\item \emph{Genome Research} (2023)
+		\item \emph{Nature Machine Intelligence} (2023)
+		\item \emph{Journal of Chemical Information and Modeling} (2020)
+
+	\end{innerlist}
+
+	\halfblankline
+
+	\textbf{Scientific Illustrations}
+\begin{innerlist}
+	\item Illustrated journal cover for \emph{JCIM: Special Issue on Frontiers in Cryo-EM Modeling}, Volume 60, Issue 5, May 2020: \href{https://pubs.acs.org/toc/jcisd8/60/5} {https://pubs.acs.org/toc/jcisd8/60/5}
+\end{innerlist}
+	
+	\halfblankline
+	
+	
+	
+\section{Professional Experience}
+	\emph{The following are some of my experiences in the arts, previous to my scientific career. More information on each of these, and others in between, is provided in my \href{https://www.linkedin.com/in/eeseitz}{\textbf{LinkedIn}} profile}
+	
+	\halfblankline
+	
+	\href{https://www.22squared.com/}{\textbf{22squared}},
+	Atlanta, GA
+	\begin{outerlist}
+		\item[] \textit{Editor, Motion Graphics Designer}%
+		\hfill \textbf{May 2013 -- May 2014}
+		\begin{innerlist}
+			\item Designed digital content for major corporate advertising clientele, including Toyota, Baskin-Robbins, PGA Superstore, Buffalo Wild Wings, Costa Rica Tourism Board, and American Standard. (Full-time position). 
+		\end{innerlist}		
+	\end{outerlist}
+
+	\halfblankline
+
+	\href{https://indigostudios.com/}{\textbf{Indigo Studios}},
+Atlanta, GA
+\begin{outerlist}
+	\item[] \textit{Motion Graphics Designer}%
+	\hfill \textbf{May 2011 -- August 2012}
+	\begin{innerlist}
+		\item Created 2D and 3D computer animations for a variety of clients, including American Cancer Society, Coca-Cola, Georgia Pacific, Southern Company, Infiniti, Cirque du Soleil, Caterpillar, ABF, Ariba, Discovery Channel, and Cartoon Network. (Freelance position)
+		\item Awarded 32nd Annual Telly Award (Bronze) for American Cancer Society animation ``Marketing Excellence''
+	\end{innerlist}		
+\end{outerlist}
+
+	\halfblankline
+
+	\textbf{Fuzebox, Inc.},
+Atlanta, GA
+\begin{outerlist}
+	\item[] \textit{Editor, Motion Graphics Designer}%
+	\hfill \textbf{January 2010 -- June 2012}
+	\begin{innerlist}
+		\item Editor and motion graphics artist on ``Submit'', a documentary on cyberbullying. Duties included storyboarding, editing, compositing, 2D and 3D animation, and color correction. (Freelance position).
+	\end{innerlist}		
+\end{outerlist}
+
+	\halfblankline
+
+	\href{https://www.gpb.org/}{\textbf{Georgia Public Broadcasting}},
+Atlanta, GA
+\begin{outerlist}
+	\item[] \textit{Editor, Motion Graphics Designer}%
+	\hfill \textbf{January 2009 -- May 2010}
+	\begin{innerlist}
+		\item Supervised post-production activities for daily statewide television broadcasts of ``Lawmakers'', providing in-depth coverage of state legislature and related issues. Responsibilities included creation of original show open, animation of graphics, and editing of news segments. (Freelance position).
+	\end{innerlist}		
+\end{outerlist}
+
+	\halfblankline
+
+	\textbf{Artistic Honors and Awards}, 2012 -- 2015
+\begin{outerlist}
+		\item 2015 -- \href{https://futureofstorytelling.org/video/jennifer-aaker-the-happiness-narrative} {``The Happiness Narrative''} featured at \href{https://futureofstorytelling.org/summit}{\emph{Future of StoryTelling Summit}} in NYC
+		\item 2013 -- \href{https://futureofstorytelling.org/video/jennifer-aaker-the-power-of-story} {``The Power of Story''} featured at \href{https://futureofstorytelling.org/summit}{\emph{Future of StoryTelling Summit}}, NYC
+		\item 2013 -- Vimeo Staff Pick, \href{https://vimeo.com/59869690} {``ABCinema: Take 2''} (>100,000 views)
+		\item 2013 -- Vimeo Staff Pick, \href{https://vimeo.com/52346538} {``Alphagames''} (>350,000 views)
+		\item 2012 -- \href{https://vimeo.com/36816268} {``ABCinema''} featured at SXSW, PauseFest, Athfest, and Tribeca
+		\item 2012 -- Vimeo Staff Pick, \href{https://vimeo.com/36816268} {``ABCinema''} (>500,000 views)
+\end{outerlist}
+	
+\section{Additional Training}
+	
+	\textbf{Invited Participant}
+	\begin{innerlist}
+		\item \href{https://dlrl.ca/} {CIFAR Deep Learning + Reinforcement Learning Summer School} (July 25–29, 2022)
+		\item \href{https://millerlaboratory.com/cshl} {CSHL Computational Genomics course} (Nov. 29–Dec. 6, 2023)
+	\end{innerlist}
+	
+	\halfblankline
+	
+	\textbf{General Participant}
+	\begin{innerlist}
+		\item CSHL Mentor Training Workshop based on the curriculum developed by \href{https://cimerproject.org/}{CIMER} (June 2023)
+		\item SUNY Old Westbury Undergraduate Teaching and Pedagogy Workshop on course design, active learning, and inclusive teaching (Fall 2023)
+	\end{innerlist}
+	
+	\halfblankline
+	
+	\section{Software\ \ \ \ Skills}
+	
+	Computer Programming:
+	
+	\begin{innerlist}
+		\item UNIX shell scripting
+		\item Expertise in Python, including libraries: Anaconda, NumPy, Scipy, Pandas, Matplotlib, Mayavi, PyQt, TraitsUI, TensorFlow; among others
+		\item Experience in Matlab, R
+	\end{innerlist}
+
+	\halfblankline
+	
+	Scientific Software:
+	
+	\begin{innerlist}
+		\item UCSF Chimera
+		\item PyMOL
+		\item Visual Molecular Dynamics
+		\item RELION 
+		\item Phenix
+		\item Prism
+		\item Mathematica
+	\end{innerlist}
+
+	\halfblankline
+
+	Visualization Software:
+	
+	\begin{innerlist}
+		\item Adobe Illustrator, Photoshop, After Effects (2/2.5D illustration and animation)
+		\item Cinema4D (3D animation)
+		\item Final Cut Pro (Video editing)
+	\end{innerlist}
+
+	\halfblankline
+	
+	Productivity Software:
+	
+	\begin{innerlist}
+		
+		\item \TeX{} (\LaTeX{}, \BibTeX{}),
+		\item Microsoft Office, Excel, and PowerPoint
+		\item GitHub
+
+	\end{innerlist}
+	
+	\halfblankline
+	
+	Operating Systems:
+	
+	\begin{innerlist}
+		\item Apple OS X
+		\item Linux
+		\item Microsoft Windows family
+	\end{innerlist}
+	
+	\halfblankline
+	
+	
+\section{Software\ \ \ \ Distributions}
+		\begin{innerlist}
+			\item E. Seitz et al., "SQUID Python repository: Interpreting sequence-based deep learning models for regulatory genomics," Zenodo, 2024.\\doi:10.5281/zenodo.11060672, \href{https://github.com/evanseitz/squid-nn}{https://github.com/evanseitz/squid-nn}\\
+			$-$ Read the Docs: \href{https://squid-nn.readthedocs.io} {https://squid-nn.readthedocs.io}
+				
+			\halfblankline
+			
+			\item E. Seitz et al., “ManifoldEM Python repository,” Zenodo, 2021.\\doi: 10.5281/zenodo.5578874, \href{https://github.com/evanseitz/ManifoldEM\_Python} {https://github.com/evanseitz/ManifoldEM$\_$Python}\\
+			$-$ Video Demonstration:\\ \hspace*{4mm}\href{https://www.dropbox.com/s/pe106oizw4p7uyb/GUI\_Overview\_VATPase.mp4?dl=0} {https://www.dropbox.com/s/pe106oizw4p7uyb/GUI\_Overview\_VATPase.mp4?dl=0}
+		\end{innerlist}
+	\blankline	
+	
+	
+	
+	\section{References Available to Contact}
+	\href
+	{https://www.cshl.edu/research/faculty-staff/justin-kinney/}
+	{\textbf{Dr.~Justin Kinney}}
+	(e\-/mail:~\href{mailto:jkinney@cshl.edu}{jkinney@cshl.edu})
+	
+	\begin{innerlist}
+		\item[$-$] \emph{I am currently working in Dr.~Kinney's lab as a Computational Postdoctoral Fellow}
+		\item[$\diamond$] \href{https://www.cshl.edu/research/quantitative-biology/} {Simons Center for Quantitative Biology}, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY 11724 USA
+	\end{innerlist}
+	
+	\halfblankline
+	
+	\href
+	{https://www.cshl.edu/research/faculty-staff/peter-koo/}
+	{\textbf{Dr.~Peter Koo}}
+	(e\-/mail:~\href{mailto:koo@cshl.edu}{koo@cshl.edu})
+	
+	\begin{innerlist}
+		\item[$-$] \emph{I am currently working in Dr.~Koo's lab as a Computational Postdoctoral Fellow}
+		\item[$\diamond$] \href{https://www.cshl.edu/research/quantitative-biology/} {Simons Center for Quantitative Biology}, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY 11724 USA
+	\end{innerlist}
+	
+	\halfblankline
+	
+	\href
+	{https://www.cshl.edu/research/faculty-staff/david-mccandlish/}
+	{\textbf{Dr.~David McCandlish}}
+	(e\-/mail:~\href{mailto:mccandlish@cshl.edu}{mccandlish@cshl.edu})
+	
+	\begin{innerlist}
+		\item[$-$] \emph{I am currently collaborating with Dr.~McCandlish during my postdoctoral fellowship}
+		\item[$\diamond$] \href{https://www.cshl.edu/research/quantitative-biology/} {Simons Center for Quantitative Biology}, Cold Spring Harbor Laboratory, Cold Spring Harbor, NY 11724 USA
+	\end{innerlist}
+	
+	\halfblankline
+	
+
+	\href
+	{https://en.wikipedia.org/wiki/Joachim_Frank}
+	{\textbf{Dr.~Joachim Frank}}
+	(e\-/mail:~\href{mailto:jf2192@cumc.columbia.edu}{jf2192@cumc.columbia.edu}; phone:~+1-646-770-4527)
+	
+	\begin{innerlist}
+		\item[$-$] \emph{Dr.~Frank was my Ph.D. supervisor}
+		\item[$\diamond$] \href{https://www.biochem.cuimc.columbia.edu/} {Department of Biochemistry and Molecular Biophysics}, Columbia University Medical Center, New York, NY 10032 USA
+		\item[$\star$] \href{https://www.biology.columbia.edu/} {Department of Biological Sciences}, Columbia University, New York, NY 10027 USA
+	\end{innerlist}
+
+	\halfblankline
+	
+	\href
+	{https://uwm.edu/physics/people/schwander-peter/}
+	{\textbf{Dr.~Peter Schwander}}
+	(e\-/mail:~\href{mailto:pschwan@uwm.edu}{pschwan@uwm.edu})
+
+	\begin{innerlist}
+		\item[$-$] \emph{Dr.~Schwander was a member of my Ph.D. dissertation defense committee}
+		\item[$\diamond$] \href{https://uwm.edu/physics/} {Department of Physics}, University of Wisconsin-Milwaukee, Milwaukee, WI 53211 USA
+	\end{innerlist}
+
+	\halfblankline
+
+	\href
+	{https://www-chem.ucsd.edu/faculty/profiles/amaro_rommie_e.html}
+	{\textbf{Dr.~Rommie Amaro}}
+	(e\-/mail:~\href{mailto:ramaro@ucsd.edu}{ramaro@ucsd.edu})
+	
+	\begin{innerlist}
+		\item[$-$] \emph{Dr.~Amaro was a member of my Ph.D. dissertation defense committee}
+		\item[$\diamond$] \href{https://chemistryandbiochemistry.ucsd.edu/} {Department of Chemistry and Biochemistry}, University of California-San Diego, La Jolla, CA 92093 USA
+	\end{innerlist}
+	
+	\halfblankline
+	
+	\href
+	{https://www.biology.columbia.edu/people/hunt}
+	{\textbf{Dr.~John Hunt}}
+	(e\-/mail:~\href{mailto:jfh21@columbia.edu}{jfh21@columbia.edu})
+	
+	\begin{innerlist}
+		\item[$-$] \emph{Dr.~Hunt was a member of my Ph.D. dissertation defense committee}
+		\item[$\diamond$] \href{https://www.biology.columbia.edu/} {Department of Biological Sciences}, Columbia University, New York, NY 10027 USA
+	\end{innerlist}
+	
+	\halfblankline
+	
+	\halfblankline
+	
+	\href
+	{https://tonglab.biology.columbia.edu/}
+	{\textbf{Dr.~Liang Tong}}
+	(e\-/mail:~\href{mailto:ltong@columbia.edu}{ltong@columbia.edu})
+	
+	\begin{innerlist}
+		\item[$-$] \emph{Dr.~Tong was a member of my Ph.D. dissertation defense committee}
+		\item[$\diamond$] \href{https://www.biology.columbia.edu/} {Department of Biological Sciences}, Columbia University, New York, NY 10027 USA
+	\end{innerlist}
+	
+	\halfblankline
+
+	\emph{Additional references available upon request.} % to be added: JC Gumbart, Jennifer Aaker... (too many?)
+	
+	\halfblankline
+	
+
+	
+	% The ``More Info'' section may not be necessary; make sure it's short
+	% so it doesn't prevent people from seeing references available to
+	% contact.
+%	\section{More Information}
+	
+%	More information and auxiliary documents can be found at\\%
+%	\url{http://www.tedpavlic.com/facjobsearch/}.
+	
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
