@@ -1,7 +1,7 @@
 ---
 title: Poster at CSHL Biology of Genomes
 subtitle: ""
-date: 2023-05-09
+date: 2024-11-11
 summary: ""
 draft: false
 featured: true
@@ -10,13 +10,7 @@ tags:
 links:
   - name: Abstract
     url: "uploads/biology-of-genomes-page.pdf"
-  - url: "uploads/biology-of-genomes-photo1.png"
-    name: Photo 1
-  - url: "uploads/biology-of-genomes-photo2.png"
-    name: Photo 2
-  - url: "uploads/biology-of-genomes-photo3.png"
-    name: Photo 3
-  - url: https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=23
+  - url: https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=24
     name: Website
     
 image:
