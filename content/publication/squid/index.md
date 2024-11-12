@@ -26,6 +26,8 @@ links:
   url: "uploads/squid_suppl.pdf"
 - name: Cite
   url: "uploads/squid_cite.ris"
+- url: https://www.cshl.edu/squid-pries-open-ai-black-box/
+  name: Press
 
 date: 2024-06-21
 ---
