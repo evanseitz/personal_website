@@ -1,7 +1,7 @@
 ---
 title: Poster at CSHL Biological Data Science
 subtitle: ""
-date: 2024-11-15
+date: 2024-10-10
 summary: ""
 draft: false
 featured: true
