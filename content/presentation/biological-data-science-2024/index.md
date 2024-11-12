@@ -9,7 +9,7 @@ tags:
   - Scientific
 links:
   - name: Abstract
-    url: "uploads/biology-of-genomes-page.pdf"
+    url: "uploads/biological-data-science-page.pdf"
   - url: https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=24
     name: Website
     
@@ -19,4 +19,5 @@ image:
   preview_only: false
 ---
 
-Evan E Seitz, Justin B Kinney and Peter K Koo. "A surrogate modeling framework for interpreting deep neural networks in functional genomics", Biology of Genomes, May 2023.
+Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Deciphering the determinants of mechanistic variation in
+regulatory sequences", Biological Data Science, November 2024.
