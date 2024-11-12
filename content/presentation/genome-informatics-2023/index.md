@@ -1,7 +1,7 @@
 ---
 title: Poster at CSHL Genome Informatics
 subtitle: ""
-date: 2023-05-09
+date: 2023-12-09
 summary: ""
 draft: false
 featured: true
