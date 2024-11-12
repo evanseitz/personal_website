@@ -11,7 +11,7 @@ links:
   - name: Abstract
     url: "uploads/biological-data-science-page.pdf"
   - name: Poster
-    url: "uploads/biological-data-science-poster.pdf"
+    url: "uploads/biological-data-science-poster.png"
   - url: https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=24
     name: Website
     
