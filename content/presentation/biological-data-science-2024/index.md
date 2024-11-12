@@ -8,10 +8,6 @@ featured: true
 tags:
   - Scientific
 links:
-  - name: Abstract
-    url: "uploads/biological-data-science-page.pdf"
-  - name: Poster
-    url: "uploads/biological-data-science-poster.pdf"
   - name: Website
     url: https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=24
     
