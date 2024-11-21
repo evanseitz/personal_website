@@ -14,6 +14,8 @@ links:
     url: "uploads/biological-data-science-poster.png"
   - url: https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=24
     name: Website
+  - url: "uploads/biological-data-science-photo1.png"
+    name: Photo
     
 image:
   filename: featured.png
