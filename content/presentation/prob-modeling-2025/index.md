@@ -14,7 +14,7 @@ links:
     url: "uploads/biological-data-science-poster.png"
   - url: https://meetings.cshl.edu/meetings.aspx?meet=PROBGEN&year=25
     name: Website
-  - url: "uploads/prob-modeling-photo1.png"
+  - url: "uploads/prob-modeling-photo1.jpg"
     name: Photo
     
 image:
