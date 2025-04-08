@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.25)  7 MAR 2025 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.25)  8 APR 2025 09:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -390,12 +390,12 @@ n-theoretic al-go-rithms (ARACNE,
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] [4] [5]
-Overfull \hbox (12.28929pt too wide) in paragraph at lines 784--785
+Overfull \hbox (12.28929pt too wide) in paragraph at lines 795--796
 \T1/ptm/m/n/10 ber 2024: [][]https://www.cshl.edu/wp-content/uploads/2025/01/20
 24_SCQB_Annual_Report.pdf[][] 
  []
 
-[6] [7] [8] 
+[6] [7] [8] [9] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Seitz_CV.aux)
  ***********
@@ -403,13 +403,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Seitz_CV.out' has not changed.
-(rerunfilecheck)             Checksum: 1FC727D28ED93124D9EC432452D8FDB8;2701.
+(rerunfilecheck)             Checksum: C658B068D86A92AF7D4222265E2638B9;2787.
  ) 
 Here is how much of TeX's memory you used:
- 9735 strings out of 474116
- 150935 string characters out of 5743682
+ 9740 strings out of 474116
+ 150979 string characters out of 5743682
  1949187 words of memory out of 5000000
- 31941 multiletter control sequences out of 15000+600000
+ 31942 multiletter control sequences out of 15000+600000
  582672 words of font info for 53 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  75i,13n,79p,729b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -419,10 +419,10 @@ Here is how much of TeX's memory you used:
 l/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Seitz_CV.pdf (8 pages, 104698 bytes).
+Output written on Seitz_CV.pdf (9 pages, 106055 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
