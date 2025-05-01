@@ -26,4 +26,4 @@ image:
   preview_only: false
 ---
 
-Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Decoding the Mechanistic Impact of Genetic Variation on Regulatory Sequences with Deep Learning", ICLR 2025 Workshop on Generative and Experimental Perspectives for Biomolecular Design, April 2025.
+Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Decoding the Mechanistic Impact of Genetic Variation on Regulatory Sequences with Deep Learning", ICLR 2025 Workshop on Generative and Experimental Perspectives for Biomolecular Design, Singapore, April 2025.
