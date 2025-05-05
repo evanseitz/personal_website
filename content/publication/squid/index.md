@@ -26,8 +26,13 @@ links:
   url: "uploads/squid_suppl.pdf"
 - name: Cite
   url: "uploads/squid_cite.ris"
-- url: https://www.cshl.edu/squid-pries-open-ai-black-box/
-  name: Press
+- name: Code
+  url: https://github.com/evanseitz/squid-nn
+- name: Data
+  url: https://zenodo.org/records/10266248
+- name: Press
+  url: https://www.cshl.edu/squid-pries-open-ai-black-box/
+  
 
 date: 2024-06-21
 ---

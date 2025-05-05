@@ -25,6 +25,9 @@ links:
   url: "uploads/BeyondManifoldEM_suppl.pdf"
 - name: Cite
   url: "uploads/BeyondManifoldEM_cite.bib"
+- name: Code
+  url: https://github.com/evanseitz/beyond_ManifoldEM
+
 
 date: 2023-04-07
 ---

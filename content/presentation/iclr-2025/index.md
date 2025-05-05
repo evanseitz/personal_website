@@ -9,7 +9,7 @@ tags:
   - Scientific
 links:
   - name: Abstract
-    url: "uploads/seam_ICLR_2025_abstract"
+    url: "uploads/seam_ICLR_2025_abstract.png"
   - url: https://www.gembio.ai/
     name: Website
   - url: "uploads/seam_ICLR_2025_photo1.jpeg"

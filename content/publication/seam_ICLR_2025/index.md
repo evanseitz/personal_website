@@ -25,6 +25,8 @@ links:
   name: OpenReview
 - name: Cite
   url: "uploads/seam_ICLR_2025_cite.bib"
+- name: Code
+  url: https://github.com/evanseitz/seam-nn
 
 date: 2025-04-15
 ---

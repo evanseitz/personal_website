@@ -18,9 +18,6 @@ image:
   focal_point: Smart
   preview_only: false
   
-links: 
-- name: Code
-  url: 
   
 links:
 - name: PDF
