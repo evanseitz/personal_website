@@ -19,10 +19,10 @@ image:
   focal_point: Smart
   preview_only: false
 links:
+- url: https://openreview.net/forum?id=PtjMeyHcTt
+  name: URL
 - name: PDF
   url: "uploads/seam_ICLR_2025.pdf"
-- url: https://openreview.net/forum?id=PtjMeyHcTt
-  name: OpenReview
 - name: Cite
   url: "uploads/seam_ICLR_2025_cite.bib"
 - name: Code
