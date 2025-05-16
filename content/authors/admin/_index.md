@@ -22,8 +22,9 @@ bio: Computational biologist exploring how deep learning models interpret biolog
 # Interests to show in About widget
 interests:
 - Machine Learning
+- Explainable AI
 - Gene Regulation
-- Model Interpretability
+- Protein Conformational Heterogeneity
 - Computational Biology
 - Complex Systems
 
@@ -34,7 +35,7 @@ education:
   - course: PhD in Biological Sciences, with Distinction (Geometric Machine Learning & Computational Biophysics)  
     institution: Columbia University, 2017–2022
 
-  - course: BS in Physics, with Highest Honor (Biophysics)
+  - course: BS in Physics, with Highest Honor (Computational Biophysics)
     institution: Georgia Institute of Technology, 2015–2017 
 
   - course: BA in Mass Communication  
@@ -81,10 +82,10 @@ highlight_name: true
 
 I'm Evan Seitz, a Computational Postdoctoral Fellow at the [Simons Center for Quantitative Biology](https://www.cshl.edu/research/quantitative-biology/) at [Cold Spring Harbor Laboratory](https://www.cshl.edu/). My work focuses on interpreting deep neural networks trained on genomic data, with an emphasis on uncovering the regulatory mechanisms encoded in DNA sequence. 
 
-I'm the developer of [**SQUID**](https://github.com/evanseitz/squid-nn) and [**SEAM**](https://github.com/evanseitz/seam-nn), two explainable AI methods for understanding what deep neural networks (DNNs) are learning from functional genomics data. SQUID uses surrogate models to interpret *cis*-regulatory mechanisms and was published in [*Nature Machine Intelligence*](https://www.nature.com/articles/s42256-024-00851-5). SEAM explores how genetic variation reshapes those mechanisms. I recently presented SEAM at the [ICLR Generative and Experimental Perspectives for Biomolecular Design (GEM) Workshop](https://openreview.net/forum?id=PtjMeyHcTt) with a preprint currently in preparation for journal submission.
+I'm the developer of [**SQUID**](https://github.com/evanseitz/squid-nn) and [**SEAM**](https://github.com/evanseitz/seam-nn), two explainable AI methods for understanding what deep neural networks (DNNs) are learning from functional genomics data. SQUID interprets *cis*-regulatory mechanisms using surrogate models and was published in [*Nature Machine Intelligence*](https://www.nature.com/articles/s42256-024-00851-5). SEAM explores how genetic variation reshapes those mechanisms. I recently presented SEAM at the [ICLR Generative and Experimental Perspectives for Biomolecular Design (GEM) Workshop](https://openreview.net/forum?id=PtjMeyHcTt) with a preprint currently in preparation for journal submission.
 
-Previously, I completed my PhD at [Columbia University](https://www.columbia.edu/) in the [Frank Lab](https://joachimfranklab.org/), where I developed geometric machine learning methods to explore conformational landscapes of biomolecules using cryo-EM data. Across both molecular and genomic systems, a central theme in my work is using machine learning — and rigorous interpretation — to make sense of biological complexity.
+Previously, I completed my PhD at [Columbia University](https://www.columbia.edu/) with Nobel laureate [Joachim Frank](https://joachimfranklab.org/), where I developed geometric machine learning and explainability frameworks to reveal conformational heterogeneity in cryo-EM protein structures. Across both molecular and genomic systems, a central theme in my work is using machine learning — and rigorous interpretation — to make sense of biological complexity.
 
-Before my scientific career, I worked professionally in 2D and 3D animation and design. I still enjoy visual storytelling and bring this perspective to my research, especially when designing figures and communicating results. Outside of science, I enjoy hiking, biking, tennis, and board games with friends and family.
+Before my scientific career, I worked professionally in animation and communication, including a collaboration with [Dr. Jennifer Aaker](https://www.gsb.stanford.edu/faculty-research/faculty/jennifer-aaker) to direct and animate a series of educational videos based on research conducted at Stanford University. The series premiered at the [Future of StoryTelling Summit](https://futureofstorytelling.org/) in NYC. I continue to enjoy visual storytelling—especially when designing figures and communicating results. Outside of science, I enjoy hiking, biking, tennis, and board games with friends and family.
 
 This site serves as a hub for my work, ideas, and ongoing projects in computational biology and machine learning. For more information, you can download my {{< staticref "uploads/resume.pdf" "newtab" >}}CV{{< /staticref >}}, or connect with me on [LinkedIn](https://www.linkedin.com/in/eeseitz).
