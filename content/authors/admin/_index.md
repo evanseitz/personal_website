@@ -16,33 +16,34 @@ organizations:
   url: https://www.cshl.edu/research/quantitative-biology/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Computational Biophysicist
+bio: Computational biologist exploring how deep learning models interpret biology
+
 
 # Interests to show in About widget
 interests:
-- Biophysics
-- Complex Systems
 - Machine Learning
-- Algorithm Design
+- Gene Regulation
+- Model Interpretability
+- Computational Biology
+- Complex Systems
+
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Computational Biophysics
-    institution: Columbia University
-    year: 2022
-  - course: MPhil in Biological Sciences
-    institution: Columbia University
-    year: 2020
-  - course: MA in Biological Sciences
-    institution: Columbia University
-    year: 2019
-  - course: BS in Physics
-    institution: Georgia Institute of Technology
-    year: 2017
-  - course: BA in Mass Communication
-    institution: Georgia College
-    year: 2009
+  - course: PhD in Biological Sciences, with Distinction  
+    details: Geometric Machine Learning & Computational Biophysics  
+    institution: Columbia University  
+    year: 2017–2022
+
+  - course: BS in Physics, with Highest Honor  
+    details: Biophysics  
+    institution: Georgia Institute of Technology  
+    year: 2015–2017
+
+  - course: BA in Mass Communication  
+    institution: Georgia College  
+    year: 2005–2009
   
 
 # Social/Academic Networking
@@ -50,12 +51,12 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/eeseitz
 - icon: github
   icon_pack: fab
   link: https://github.com/evanseitz
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/eeseitz
 - icon: google-scholar #graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: ai
   link: https://scholar.google.com/citations?user=S9FdJf4AAAAJ&hl=en
@@ -89,12 +90,12 @@ email: ""
 highlight_name: true
 ---
 
-My name is Evan Seitz and I'm currently a Computational Postdoctoral Fellow in the [Simons Center for Quantitative Biology](https://www.cshl.edu/research/quantitative-biology/) at [Cold Spring Harbor Laboratory](https://www.cshl.edu/). In this role, I've developed advanced interpretation techniques to understand gene-regulatory mechanisms learned by black-box deep neural networks.
+I'm Evan Seitz, a Computational Postdoctoral Fellow at the [Simons Center for Quantitative Biology](https://www.cshl.edu/research/quantitative-biology/) at [Cold Spring Harbor Laboratory](https://www.cshl.edu/). My work focuses on interpreting deep neural networks trained on genomic data, with an emphasis on uncovering the regulatory mechanisms encoded in DNA sequence. 
 
-Previously, I obtained my doctorate at [Columbia University](https://www.columbia.edu/) working on Computational Biophysics in the [Frank Lab](https://joachimfranklab.org/). My thesis work focused on the development, interpretation and refinement of a geometric machine-learning approach to elucidate metabolic function in the form of a low-dimensional energy landscape and corresponding continuum of atomic structures.
+I'm the developer of **SQUID** and **SEAM**, two explainable AI methods for understanding what deep neural networks (DNNs) are learning from functional genomics data. SQUID uses surrogate models to interpret *cis*-regulatory mechanisms and was published in [*Nature Machine Intelligence*](https://www.nature.com/articles/s42256-024-00851-5). SEAM explores how genetic variation reshapes those mechanisms. I recently presented SEAM at the [ICLR Generative and Experimental Perspectives for Biomolecular Design (GEM) Workshop](https://openreview.net/forum?id=PtjMeyHcTt) with a preprint currently in preparation for journal submission.
 
-A commonality in my work is the navigation of biological complexity through the application of machine learning models augmented by advanced interpretation techniques.
+Previously, I completed my PhD at [Columbia University](https://www.columbia.edu/) in the [Frank Lab](https://joachimfranklab.org/), where I developed geometric machine learning methods to explore conformational landscapes of biomolecules using cryo-EM data. Across both molecular and genomic systems, a central theme in my work is using machine learning — and rigorous interpretation — to make sense of biological complexity.
 
-Almost a decade ago, previous to my scientific endeavors, my profession was in the [arts](https://vimeo.com/eeseitz) (specifically 2D and 3D animation and design). Although my path has changed, I still love to design and find ways to incorporate those skills into my scientific work. I also love learning new things and sharing my ideas and experiences with others. In my free time, I have fun hiking, bicycling, playing sports like tennis, and video games.
+Before my scientific career, I worked professionally in 2D and 3D animation and design. I still enjoy visual storytelling and bring this perspective to my research, especially when designing figures and communicating results. Outside of science, I enjoy hiking, biking, tennis, and board games with friends and family.
 
-This website provides an overview of my work in science and education. For more information, download my {{< staticref "uploads/resume.pdf" "newtab" >}}curriculum vitae{{< /staticref >}} {{< icon name="download" pack="fas" >}}
+This site serves as a hub for my work, ideas, and ongoing projects in computational biology and machine learning. For more information, you can download my {{< staticref "uploads/resume.pdf" "newtab" >}}CV{{< /staticref >}} {{< icon name="download" pack="fas" >}}, or connect with me on [LinkedIn](https://www.linkedin.com/in/eeseitz).
