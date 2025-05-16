@@ -1,0 +1,90 @@
+%% Evan Seitz - Industry CV
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% Formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Large Evan E. Seitz} \\
+    \href{https://www.evanseitz.com}{www.evanseitz.com} ~|~ evan.e.seitz@gmail.com ~|~ +1 (404) 964-9821 ~|~ New York, NY
+\end{center}
+
+\section*{Summary}
+Computational biologist and machine learning researcher with expertise in model interpretability, regulatory genomics, and structural biology. Developer of SEAM and SQUID, two explainable AI frameworks for interpreting deep neural networks trained on functional genomics data. SQUID interprets cis-regulatory mechanisms using surrogate models and was published in \textit{Nature Machine Intelligence}. SEAM explores how genetic variation reshapes those mechanisms through attribution-based clustering and is currently nearing publication. PhD with Distinction under Nobel laureate Joachim Frank, where I led the development of ESPER—an interpretable geometric machine learning method that uses biologically informed perturbations to interpret high-dimensional spectral geometry and characterize conformational continua of molecular machines.
+
+\section*{Experience}
+\textbf{Cold Spring Harbor Laboratory} \hfill Computational Postdoctoral Fellow\\
+Simons Center for Quantitative Biology \hfill Mar 2022 -- Present
+\begin{itemize}
+    \item Co-mentored by \textbf{Peter Koo} and \textbf{Justin Kinney} (Koo and Kinney Labs).
+    \item Developed SEAM and SQUID, two interpretability methods for genomic deep learning.
+    \item Published in \textit{Nature Machine Intelligence} (2024): \textit{Interpreting cis-regulatory mechanisms from genomic deep neural networks using surrogate models}.
+    \item Delivered invited oral presentation at ICLR GEM Workshop (2025): \textit{Decoding the Mechanistic Impact of Genetic Variation on Regulatory Sequences with Deep Learning}.
+    \item Awarded NIH F32 Fellowship (F32HG013265) by the NHGRI (2024--2027).
+\end{itemize}
+
+\textbf{Columbia University} \hfill PhD Researcher, Frank Lab\\
+Departments of Biological Sciences \& Biochemistry and Molecular Biophysics \hfill 2017 -- 2022
+\begin{itemize}
+    \item Invented ESPER, an interpretability method using biologically meaningful perturbations and eigenfunctions of the Laplace-Beltrami Operator to analyze low-dimensional manifolds of cryo-EM image embeddings.
+    \item Identified and formalized how conformational continua of molecular machines are embedded in spectral geometry, with applications to systems such as the 80S Ribosome, V-ATPase, and SARS-CoV-2 Spike protein.
+    \item Contributed to ManifoldEM backend/frontend software and extended its applications to complex biomolecular systems.
+    \item Published in \textit{RSC Digital Discovery} (2023), \textit{IEEE Trans. Comput. Imaging} (2022), \textit{Nature Chemistry} (2021), and \textit{ACS J. Chem. Inf. Model} (2020).
+    \item Awarded the John S. Newberry Prize (2022), selected by departmental faculty committee.
+\end{itemize}
+
+\section*{Education}
+\textbf{PhD in Biological Sciences} (with Distinction), Columbia University\\
+\textit{Departments of Biological Sciences \& Biochemistry and Molecular Biophysics}
+
+\textbf{MPhil and MA}, Columbia University\\
+\textbf{BS in Physics} (Highest Honors), Georgia Institute of Technology\\
+\textbf{BA in Mass Communication}, Georgia College
+
+\section*{Key Projects \\ \normalfont\normalsize (GitHub links available upon request)}
+\textbf{SEAM} \,---\, Systematic Explanation of Attribution-based Mechanisms\\
+A framework that clusters attribution maps across mutagenized sequence libraries to uncover how small sets of mutations rewire cis-regulatory logic. SEAM resolves locus-specific mechanisms by disentangling transcription factor usage, motif syntax, and background context—enabling fine-grained analyses of functional elements, epistasis, and regulatory variation.\\
+\textit{GitHub:} \url{https://github.com/evanseitz/seam-nn}
+\textit{Docs:} \href{https://seam-nn.readthedocs.io}{seam-nn.readthedocs.io}
+
+
+\textbf{SQUID} \,---\, Surrogate Quantitative Interpretability for Deepnets\\
+Quantifies mechanistic determinants learned by DNNs through surrogate modeling of attribution and prediction functions, enabling regulatory mechanism discovery from functional genomics data.
+
+
+\textbf{ESPER} \,---\, Embedded Subspace Partitioning and Eigenfunction Realignment\\
+Analyzes spectral geometry of manifold embeddings to recover conformational continua in cryo-EM datasets. Enables interpretable mapping of structural transitions between biologically meaningful input perturbations and Laplace-Beltrami eigenfunctions.
+
+\section*{Skills}
+\textbf{Languages:} Python, R, MATLAB, Bash\\
+\textbf{Frameworks:} TensorFlow, PyTorch, NumPy, SciPy, Pandas, Conda\\
+\textbf{Tools:} Git, LaTeX, GitHub, ReadTheDocs\\
+\textbf{Scientific Software:} UCSF Chimera, PyMOL, VMD, RELION, Phenix\\
+\textbf{Visualization:} Adobe Illustrator, After Effects, Cinema4D, Matplotlib, Mayavi
+
+\section*{Select Publications}
+Seitz et al., \textit{Nature Machine Intelligence}, 2024.\\
+Seitz et al., \textit{RSC Digital Discovery}, 2023.\\
+Seitz et al., \textit{IEEE Trans. Computational Imaging}, 2022.\\
+Sztain et al., \textit{Nature Chemistry}, 2021.\\
+Seitz \& Frank, \textit{ACS J. Chem. Inf. Model}, 2020.\\
+Seitz et al., ICLR GEM Workshop (camera-ready paper), 2025. \href{https://openreview.net/forum?id=PtjMeyHcTt}{openreview.net/forum?id=PtjMeyHcTt}
+
+\section*{Honors \& Fellowships}
+\textbf{NIH F32 Postdoctoral Fellowship}, NHGRI (F32HG013265), 2024--2027\\
+\textbf{John S. Newberry Prize}, Columbia University (2022)
+
+\section*{Talks \& Posters}
+\textbf{Oral Talk:} ICLR GEM Workshop (2025): \textit{Decoding the Mechanistic Impact of Genetic Variation...}\\
+\textbf{Poster Presentations:} CSHL Biology of Genomes (2023, 2025), Genome Informatics (2023), Biological Data Science (2024), Probabilistic Modeling in Genomics (2025), In-House Symposium (2024, 2025)
+
+\end{document}

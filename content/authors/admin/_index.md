@@ -70,7 +70,7 @@ social:
   link: https://vimeo.com/eeseitz
 - icon: cv
   icon_pack: ai
-  link: "uploads/resume.pdf"
+  link: "uploads/Seitz_Academic_CV.pdf"
 
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
@@ -89,3 +89,11 @@ Previously, I completed my PhD at [Columbia University](https://www.columbia.edu
 Before my scientific career, I worked professionally in animation and communication, including a collaboration with [Dr. Jennifer Aaker](https://www.gsb.stanford.edu/faculty-research/faculty/jennifer-aaker) to direct and animate a series of educational videos based on research conducted at Stanford University. The series premiered at the [Future of StoryTelling Summit](https://futureofstorytelling.org/) in NYC. I continue to enjoy visual storytelling—especially when designing figures and communicating results. Outside of science, I enjoy hiking, biking, tennis, and board games with friends and family.
 
 This site serves as a hub for my work, ideas, and ongoing projects in computational biology and machine learning. For more information, you can download my {{< staticref "uploads/resume.pdf" "newtab" >}}CV{{< /staticref >}}, or connect with me on [LinkedIn](https://www.linkedin.com/in/eeseitz).
+
+This site serves as a hub for my work, ideas, and ongoing projects in computational biology and machine learning. You can download my:
+
+- 📄 {{< staticref "uploads/Seitz_Academic_CV.pdf" "newtab" >}}Academic CV{{< /staticref >}}  
+- 💼 {{< staticref "uploads/Seitz_Industry_CV.pdf" "newtab" >}}Industry CV{{< /staticref >}}
+
+Or connect with me on [LinkedIn](https://www.linkedin.com/in/eeseitz).
+
