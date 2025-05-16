@@ -31,13 +31,11 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Biological Sciences, with Distinction  
-    details: Geometric Machine Learning & Computational Biophysics  
-    institution: Columbia University  
+  - course: PhD in Biological Sciences, with Distinction (Geometric Machine Learning & Computational Biophysics)  
+    institution: Columbia University
     year: 2017–2022
 
-  - course: BS in Physics, with Highest Honor  
-    details: Biophysics  
+  - course: BS in Physics, with Highest Honor (Biophysics)
     institution: Georgia Institute of Technology  
     year: 2015–2017
 
@@ -76,15 +74,9 @@ social:
   icon_pack: ai
   link: "uploads/resume.pdf"
 
-# Link to a PDF of your resume/CV.
-# To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
-# and uncomment the lines below.
-# - icon: cv
- #  icon_pack: ai
-  # link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "evan.e.seitz@gmail.com"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
@@ -98,4 +90,4 @@ Previously, I completed my PhD at [Columbia University](https://www.columbia.edu
 
 Before my scientific career, I worked professionally in 2D and 3D animation and design. I still enjoy visual storytelling and bring this perspective to my research, especially when designing figures and communicating results. Outside of science, I enjoy hiking, biking, tennis, and board games with friends and family.
 
-This site serves as a hub for my work, ideas, and ongoing projects in computational biology and machine learning. For more information, you can download my {{< staticref "uploads/resume.pdf" "newtab" >}}CV{{< /staticref >}} {{< icon name="download" pack="fas" >}}, or connect with me on [LinkedIn](https://www.linkedin.com/in/eeseitz).
+This site serves as a hub for my work, ideas, and ongoing projects in computational biology and machine learning. For more information, you can download my {{< staticref "uploads/resume.pdf" "newtab" >}}CV{{< /staticref >}}, or connect with me on [LinkedIn](https://www.linkedin.com/in/eeseitz).
