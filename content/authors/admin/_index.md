@@ -32,16 +32,13 @@ interests:
 education:
   courses:
   - course: PhD in Biological Sciences, with Distinction (Geometric Machine Learning & Computational Biophysics)  
-    institution: Columbia University
-    year: 2017–2022
+    institution: Columbia University, 2017–2022
 
   - course: BS in Physics, with Highest Honor (Biophysics)
-    institution: Georgia Institute of Technology  
-    year: 2015–2017
+    institution: Georgia Institute of Technology, 2015–2017 
 
   - course: BA in Mass Communication  
-    institution: Georgia College  
-    year: 2005–2009
+    institution: Georgia College, 2005–2009
   
 
 # Social/Academic Networking
