@@ -25,4 +25,4 @@ image:
   preview_only: false
 ---
 
-Evan E Seitz, Justin B Kinney and Peter K Koo. "Decoding the mechanistic impact of genetic variation on regulatory sequences with deep learning", Biology of Genomes, May 2025.
+Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Decoding the mechanistic impact of genetic variation on regulatory sequences with deep learning", Biology of Genomes, May 2025.
