@@ -11,10 +11,10 @@ links:
   - name: Abstract
     url: "uploads/BOG25-page.pdf"
   - name: Poster
-    url: "uploads/BOG25-poster.pdf"
-  - url: "uploads/BOG25-photo1.png"
+    url: "uploads/BOG25-poster.png"
+  - url: "uploads/BOG25-photo1.jpg"
     name: Photo 1
-  - url: "uploads/BOG25-photo2.png"
+  - url: "uploads/BOG25-photo2.jpg"
     name: Photo 2
   - url: https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=25
     name: Website

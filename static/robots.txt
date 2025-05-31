@@ -1,3 +1,17 @@
 User-agent: *
-Disallow: /uploads/*.pdf
+Allow: /
 Disallow: /admin/
+Disallow: /*.xml$
+Disallow: /*.bib$
+Disallow: /uploads/*.bib$
+Disallow: /uploads/*.pdf
+Disallow: /category/
+Disallow: /tag/
+Disallow: /publication-type/
+
+# Allow sitemap
+Allow: /sitemap.xml
+
+# Allow main index
+Allow: /index.html
+Allow: /index.md
