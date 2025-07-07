@@ -1,7 +1,7 @@
 ---
 title: Poster at GRC and GRS
 subtitle: ""
-date: 2025-05-09
+date: 2025-07-05
 summary: ""
 draft: false
 featured: true
