@@ -12,6 +12,8 @@ links:
     name: GRC
   - url: https://www.grc.org/human-genetics-and-genomics-grs-conference/2025/
     name: GRS
+  - url: "uploads/seam_GRC_2025_photo1.jpeg"
+    name: Photo
     
 image:
   filename: featured.png
