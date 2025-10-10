@@ -28,4 +28,3 @@ image:
 ---
 
 Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Mapping the Mechanistic Impact of Genetic Variation with Interpretable Deep Learning", September 17, 2025, AI in Molecular Biology Keystone Symposia, Sante Fe, NM.
-
