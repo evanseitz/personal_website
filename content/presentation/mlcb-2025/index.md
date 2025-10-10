@@ -1,7 +1,7 @@
 ---
 title: Spotlight Poster at MLCB 2025
 subtitle: ""
-date: 2025-17-10
+date: 2025-10-10
 summary: ""
 draft: false
 featured: true
@@ -19,4 +19,4 @@ image:
   preview_only: false
 ---
 
-Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Decoding the Mechanistic Impact of Genetic Variation on Regulatory Sequences with Deep Learning", September 17, 2025. The 20th Machine Learning in Computational Biology (MLCB) meeting, New York Genome Center, NYC.
+Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Decoding the Mechanistic Impact of Genetic Variation on Regulatory Sequences with Deep Learning", September 10, 2025. The 20th Machine Learning in Computational Biology (MLCB) meeting, New York Genome Center, NYC.

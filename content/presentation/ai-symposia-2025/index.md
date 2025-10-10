@@ -1,7 +1,7 @@
 ---
 title: Oral presentation at AI in Molecular Biology Keystone Symposia
 subtitle: ""
-date: 2025-09-16
+date: 2025-17-16
 summary: ""
 draft: false
 featured: true
@@ -27,5 +27,5 @@ image:
   preview_only: false
 ---
 
-Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Mapping the Mechanistic Impact of Genetic Variation with Interpretable Deep Learning", September 10, 2025, AI in Molecular Biology Keystone Symposia, Sante Fe, NM.
+Evan E Seitz, David M McCandlish, Justin B Kinney and Peter K Koo. "Mapping the Mechanistic Impact of Genetic Variation with Interpretable Deep Learning", September 17, 2025, AI in Molecular Biology Keystone Symposia, Sante Fe, NM.
 
