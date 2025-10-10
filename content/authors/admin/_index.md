@@ -82,7 +82,7 @@ email: "evan.e.seitz@gmail.com"
 highlight_name: true
 ---
 
-I'm a computational biologist working at the intersection of machine learning, regulatory genomics, and structural biology. I recently joined [InstaDeep](https://www.instadeep.com/) as a Research Scientist, where I focus on advancing genomics using genomic large language models (gLMs) and other AI-driven approaches.
+I'm Evan Seitz, a computational biologist working at the intersection of machine learning, regulatory genomics, and structural biology. I recently joined [InstaDeep](https://www.instadeep.com/) as a Research Scientist, where I focus on advancing genomics using genomic large language models (gLMs) and other AI-driven approaches.
 
 As a postdoctoral fellow at [Cold Spring Harbor Laboratory](https://www.cshl.edu/) with Drs. Peter Koo and Justin Kinney, I developed two explainable AI frameworks—[**SQUID**](https://github.com/evanseitz/squid-nn) and [**SEAM**](https://github.com/evanseitz/seam-nn)—for uncovering cis-regulatory mechanisms in genomic deep neural networks. Previously, I completed my Ph.D. with Nobel laureate [Joachim Frank](https://joachimfranklab.org/) at [Columbia University](https://www.columbia.edu/), where I developed geometric machine learning and explainability frameworks to reveal conformational heterogeneity in cryo-EM protein structures.
 
