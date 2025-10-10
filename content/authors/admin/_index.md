@@ -6,17 +6,19 @@ title: Evan Seitz
 superuser: true
 
 # Role/position/tagline
-role: Computational Postdoctoral Fellow
+role: Research Scientist
 
 # Organizations/Affiliations to show in About widget
 organizations:
+- name: InstaDeep
+  url: https://www.instadeep.com/
 - name: Cold Spring Harbor Laboratory
   url: https://www.cshl.edu/
 - name: Simons Center for Quantitative Biology
   url: https://www.cshl.edu/research/quantitative-biology/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Computational biologist exploring how deep learning models interpret biology
+bio: Computational biologist working at the intersection of interpretable machine learning, regulatory genomics, and structural biology
 
 
 # Interests to show in About widget
@@ -80,13 +82,11 @@ email: "evan.e.seitz@gmail.com"
 highlight_name: true
 ---
 
-I'm Evan Seitz, a Computational Postdoctoral Fellow at the [Simons Center for Quantitative Biology](https://www.cshl.edu/research/quantitative-biology/) at [Cold Spring Harbor Laboratory](https://www.cshl.edu/). My work focuses on interpreting deep neural networks trained on genomic data, with an emphasis on uncovering the regulatory mechanisms encoded in DNA sequence. 
+I'm a computational biologist working at the intersection of machine learning, regulatory genomics, and structural biology. I recently joined [InstaDeep](https://www.instadeep.com/) as a Research Scientist, where I focus on advancing genomics using genomic large language models (gLMs) and other AI-driven approaches.
 
-I'm the developer of [**SQUID**](https://github.com/evanseitz/squid-nn) and [**SEAM**](https://github.com/evanseitz/seam-nn), two explainable AI methods for understanding what deep neural networks (DNNs) are learning from functional genomics data. SQUID interprets *cis*-regulatory mechanisms using surrogate models and was published in [*Nature Machine Intelligence*](https://www.nature.com/articles/s42256-024-00851-5). SEAM explores how genetic variation reshapes those mechanisms. I recently presented SEAM at the [ICLR Generative and Experimental Perspectives for Biomolecular Design (GEM) Workshop](https://openreview.net/forum?id=PtjMeyHcTt) with a preprint currently in preparation for journal submission.
+As a postdoctoral fellow at [Cold Spring Harbor Laboratory](https://www.cshl.edu/) with Drs. Peter Koo and Justin Kinney, I developed two explainable AI frameworks—[**SQUID**](https://github.com/evanseitz/squid-nn) and [**SEAM**](https://github.com/evanseitz/seam-nn)—for uncovering cis-regulatory mechanisms in genomic deep neural networks. Previously, I completed my Ph.D. with Nobel laureate [Joachim Frank](https://joachimfranklab.org/) at [Columbia University](https://www.columbia.edu/), where I developed geometric machine learning and explainability frameworks to reveal conformational heterogeneity in cryo-EM protein structures.
 
-Previously, I completed my PhD at [Columbia University](https://www.columbia.edu/) with Nobel laureate [Joachim Frank](https://joachimfranklab.org/), where I developed geometric machine learning and explainability frameworks to reveal conformational heterogeneity in cryo-EM protein structures. Across both molecular and genomic systems, a central theme in my work is using machine learning — and rigorous interpretation — to make sense of biological complexity.
-
-Before my scientific career, I worked professionally in animation and communication, including a collaboration with [Dr. Jennifer Aaker](https://www.gsb.stanford.edu/faculty-research/faculty/jennifer-aaker) to direct and animate a series of educational videos based on research conducted at Stanford University, which premiered at the [Future of StoryTelling Summit](https://futureofstorytelling.org/) in NYC. I continue to enjoy visual storytelling—especially when designing figures and communicating results. Outside of science, I enjoy hiking, biking, tennis, and board games with friends and family.
+My work is driven by a deep curiosity about nature, and how to leverage learning systems to extract meaning from biological complexity. I'm always open to conversations around research, collaboration, or industry roles at the intersection of AI and biology.
 
 This site serves as a hub for my work, ideas, and ongoing projects in computational biology and machine learning. You can download my:
 
