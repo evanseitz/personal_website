@@ -30,5 +30,5 @@ links:
 - name: Code
   url: https://github.com/evanseitz/seam-nn
 
-date: 2025-04-15
+date: 2025-10-08
 ---

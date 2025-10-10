@@ -14,10 +14,6 @@ draft: false
 featured: false
 tags:
   - First author
-image:
-  filename: featured
-  focal_point: Smart
-  preview_only: false
 links:
 - url: https://openreview.net/forum?id=PtjMeyHcTt
   name: URL
