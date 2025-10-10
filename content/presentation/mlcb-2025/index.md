@@ -1,7 +1,7 @@
 ---
 title: Spotlight Poster at MLCB 2025
 subtitle: ""
-date: 2025-10-10
+date: 2025-09-10
 summary: ""
 draft: false
 featured: true

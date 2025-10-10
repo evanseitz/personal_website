@@ -1,7 +1,7 @@
 ---
 title: Oral presentation at AI in Molecular Biology Keystone Symposia
 subtitle: ""
-date: 2025-17-16
+date: 2025-09-17
 summary: ""
 draft: false
 featured: true
@@ -12,11 +12,11 @@ links:
     name: Photo 1
   - url: "uploads/AI-symposia-photo2.PNG"
     name: Photo 2
-   - url: "uploads/AI-symposia-photo3.PNG"
+  - url: "uploads/AI-symposia-photo3.jpeg"
     name: Photo 3
-   - url: "uploads/AI-symposia-photo4.PNG"
+  - url: "uploads/AI-symposia-photo4.jpeg"
     name: Photo 4
-   - url: "uploads/AI-symposia-photo5.PNG"
+  - url: "uploads/AI-symposia-photo5.jpeg"
     name: Photo 5
   - url: https://www.keystonesymposia.org/conferences/conference-listing/meeting/g22026
     name: Website
