@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.25)  15 MAY 2025 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.25)  5 DEC 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Seitz_CV.tex
-(./Seitz_CV.tex
+**Seitz_Academic_CV.tex
+(./Seitz_Academic_CV.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -282,8 +282,8 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box52
 )
-(./Seitz_CV.aux)
-\openout1 = `Seitz_CV.aux'.
+(./Seitz_Academic_CV.aux)
+\openout1 = `Seitz_Academic_CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 325.
 LaTeX Font Info:    ... okay on input line 325.
@@ -353,9 +353,9 @@ LaTeX Font Info:    ... okay on input line 325.
 \everyMPtoPDFconversion=\toks21
 )
 Package hyperref Info: Link coloring ON on input line 325.
- (./Seitz_CV.out) (./Seitz_CV.out)
+ (./Seitz_Academic_CV.out) (./Seitz_Academic_CV.out)
 \@outlinefile=\write3
-\openout3 = `Seitz_CV.out'.
+\openout3 = `Seitz_Academic_CV.out'.
 
 \rcollength=\skip67
 \spacewidth=\skip68
@@ -364,64 +364,64 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 343.
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--357
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 
  []
 
 
-LaTeX Warning: Unexpected alignment m on input line 362.
+LaTeX Warning: Unexpected alignment m on input line 361.
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 343--377
+Overfull \hbox (6.0pt too wide) in paragraph at lines 343--376
 [][] 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-07.
+06.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (9.7291pt too wide) in paragraph at lines 472--473
+) [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+Overfull \hbox (9.7291pt too wide) in paragraph at lines 489--490
 \T1/ptm/m/n/10 fano, ex-plor-ing cell reg-u-la-tory net-works us-ing informatio
 n-theoretic al-go-rithms (ARACNE,
  []
 
-[1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] [4] [5]
-Overfull \hbox (12.28929pt too wide) in paragraph at lines 797--798
+[2] [3] [4] [5] [6]
+Overfull \hbox (12.28929pt too wide) in paragraph at lines 841--842
 \T1/ptm/m/n/10 ber 2024: [][]https://www.cshl.edu/wp-content/uploads/2025/01/20
 24_SCQB_Annual_Report.pdf[][] 
  []
 
-[6] [7] [8] 
+[7] [8] [9] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(./Seitz_CV.aux)
+(./Seitz_Academic_CV.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `Seitz_CV.out' has not changed.
-(rerunfilecheck)             Checksum: AD391017884BC1B08D4B087CDC1D4260;2767.
+Package rerunfilecheck Info: File `Seitz_Academic_CV.out' has not changed.
+(rerunfilecheck)             Checksum: A337464FBF75139AF35AE62937D76378;2901.
  ) 
 Here is how much of TeX's memory you used:
- 9736 strings out of 474116
- 150945 string characters out of 5743682
+ 9747 strings out of 474116
+ 151202 string characters out of 5743682
  1949187 words of memory out of 5000000
- 31941 multiletter control sequences out of 15000+600000
+ 31942 multiletter control sequences out of 15000+600000
  579904 words of font info for 51 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 75i,13n,79p,729b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,738b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
 l/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
 2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Seitz_CV.pdf (8 pages, 96752 bytes).
+Output written on Seitz_Academic_CV.pdf (9 pages, 99967 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
